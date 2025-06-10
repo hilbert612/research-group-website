@@ -86,7 +86,7 @@ const Research = () => {
               Pioneering the Future of Clean Energy
             </h3>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Through the synergy of AI and advanced materials, we're accelerating the development 
+              Through the synergy of AI and advanced materials, we&apos;re accelerating the development 
               of next-generation energy technologies for a sustainable future.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
