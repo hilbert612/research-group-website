@@ -33,9 +33,9 @@ const Header = () => {
         <div className="flex justify-between items-center py-4">
           <div className="flex-shrink-0">
             <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
-              AIMCE Lab
+              ICARE Lab
             </h1>
-            <p className="text-xs text-gray-500 -mt-1">Advanced Intelligent Materials for Clean Energy</p>
+            <p className="text-xs text-gray-500 -mt-1">Intelligent Chemistry and Advanced Materials for Renewable Energy</p>
           </div>
 
           {/* Desktop Navigation */}

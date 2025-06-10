@@ -34,8 +34,7 @@ export const teamMembers: Record<string, TeamMember> = {
     affiliations: [
       'Chair Professor of Department of Chemistry',
       'City University of Hong Kong',
-      'Director of Materials Research Lab',
-      'PhD(HKUST)'
+     
     ],
     biography: `Professor ZHU Zonglong is a Chair Professor at the Department of Chemistry, City University of Hong Kong, and Director of the Materials Research Lab.
 

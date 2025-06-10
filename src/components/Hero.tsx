@@ -6,15 +6,15 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="space-y-8">
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900">
-            Advanced Intelligent Materials
+            Intelligent Chemistry and Advanced Materials
             <span className="block text-transparent bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text">
-              for Clean Energy
+              for Renewable Energy
             </span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                      <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
             We are pioneering the integration of artificial intelligence with advanced materials science 
-            to revolutionize clean energy technologies, focusing on perovskite solar cells and 
+            to revolutionize renewable energy technologies, focusing on perovskite solar cells and 
             intelligent energy storage systems.
           </p>
           
@@ -38,7 +38,7 @@ const Hero = () => {
           
           <div className="mt-16">
             <a href="#about" className="inline-flex items-center text-gray-500 hover:text-green-600 transition-colors duration-200">
-              <span className="mr-2">Discover AIMCE Lab</span>
+              <span className="mr-2">Discover ICARE Lab</span>
               <ArrowDown size={20} className="animate-bounce" />
             </a>
           </div>
