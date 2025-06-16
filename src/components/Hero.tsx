@@ -20,19 +20,19 @@ const Hero = () => {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
-              href="#research"
+              href="#publications"
               className="bg-gradient-to-r from-blue-600 to-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-green-700 transition-all duration-200 shadow-lg"
             >
-              Explore Perovskite Research
+              View Our Publications
             </a>
             <a
-              href="#publications"
+              href="#team"
               className="border-2 border-transparent bg-gradient-to-r from-blue-600 to-green-600 bg-clip-border text-transparent bg-clip-text px-8 py-3 rounded-lg font-semibold hover:bg-gradient-to-r hover:from-blue-50 hover:to-green-50 transition-all duration-200"
               style={{
                 borderImage: 'linear-gradient(to right, #2563eb, #059669) 1'
               }}
             >
-              View Energy Materials
+              Meet Our Team
             </a>
           </div>
           

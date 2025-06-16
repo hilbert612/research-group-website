@@ -17,7 +17,7 @@ export interface TeamMember {
   }>
   researchInterests: string[]
   imageUrl: string
-  isDirector?: boolean
+  isPrincipalInvestigator?: boolean
   isAlumni?: boolean
   currentPosition?: string // For alumni
 }
@@ -26,17 +26,17 @@ export const teamMembers: Record<string, TeamMember> = {
   'zonglong-zhu': {
     id: 'zonglong-zhu',
     name: 'Prof. ZHU Zonglong',
-    title: 'Chair Professor & Lab Director',
+    title: 'Chair Professor & Principal Investigator',
     email: 'zonglzhu@cityu.edu.hk',
-    homePage: 'https://zhugroupcityu.wixsite.com/zhugroup',
+    homePage: 'https://www.cityu.edu.hk/chem/people/academic-staff/ZZHU',
     googleScholar: 'https://scholar.google.com.ua/citations?user=_HSF3-oAAAAJ&hl=en',
     orcid: 'https://orcid.org/0000-0002-8285-9665',
     affiliations: [
       'Chair Professor of Department of Chemistry',
       'City University of Hong Kong',
-     
+      'Research Grants Coordinator (CSCI)'
     ],
-    biography: `Professor ZHU Zonglong is a Chair Professor at the Department of Chemistry, City University of Hong Kong, and Director of the Materials Research Lab.
+    biography: `Professor ZHU Zonglong is a Chair Professor at the Department of Chemistry, City University of Hong Kong, and Principal Investigator of the Materials Research Lab.
 
 Dr. Zhu obtained his B.S. degree (Chemistry) in 2010 from Nanjing University (China). In 2015, he earned his Ph.D. degree from Hong Kong University of Science and Technology (HKUST). Then he moved to the department of materials science and engineering in University of Washington, Seattle and worked as a postdoctoral fellow during 2015-2017. He moved back to HKUST as visiting scholar in 2017. Dr. Zhu joined the City University of Hong Kong as an Assistant Professor in June 2018 and has since been promoted to Chair Professor.
 
@@ -65,114 +65,71 @@ Dr. Zhu has published extensively in top-tier journals including Science, Nature
       'Electrochemical Devices'
     ],
     imageUrl: '/images/team/zonglong-zhu.jpg',
-    isDirector: true
+    isPrincipalInvestigator: true
   },
   
-  'emily-williams': {
-    id: 'emily-williams',
-    name: 'Dr. Emily Williams',
+  'danpeng-gao': {
+    id: 'danpeng-gao',
+    name: 'Dr. Gao Danpeng',
     title: 'Research Fellow',
-    email: 'emily.williams@university.edu',
-    googleScholar: 'https://scholar.google.com/citations?user=example2',
-    linkedin: 'https://www.linkedin.com/in/emily-williams-cv',
+    email: 'dp.gao@cityu.edu.hk',
+    googleScholar: 'https://scholar.google.com/citations?hl=zh-CN&user=QmNhp_oAAAAJ&view_op=list_works&sortby=pubdate',
+    orcid: 'https://orcid.org/0000-0001-6633-8782',
     affiliations: [
-      'Research Fellow in Computer Vision',
-      'Member, Medical AI Research Group',
-      'Affiliate, Centre for Healthcare AI'
+      'Research Fellow',
+      'City University of Hong Kong',
+      'Materials Research Group'
     ],
-    biography: `Dr. Emily Williams is a Research Fellow specializing in computer vision and medical AI applications. Her work focuses on developing novel deep learning architectures for medical image analysis and diagnostic systems.
+    biography: `Dr. Gao Danpeng is a Research Fellow in our group. His research focuses on chemistry and materials science with applications in renewable energy and nanotechnology.
 
-She has extensive experience in collaborating with healthcare professionals to translate cutting-edge AI research into practical clinical applications. Her recent work includes developing AI systems for early cancer detection and automated medical imaging analysis.
-
-Emily has published extensively in top-tier computer vision and medical AI conferences, and her work has been adopted by several major hospitals for clinical trials.`,
+He completed his PhD in Chemistry at City University of Hong Kong and has published extensively in high-impact journals in the field of materials science and chemistry.`,
     education: [
       {
-        institution: 'Oxford University',
-        degree: 'PhD in Computer Vision',
-        years: '2015-2019'
-      },
-      {
-        institution: 'Cambridge University',
-        degree: 'MEng in Engineering Science',
-        years: '2011-2015'
+        institution: 'City University of Hong Kong',
+        degree: 'PhD in Chemistry',
+        years: '2021-2024'
       }
     ],
     researchInterests: [
-      'Computer Vision',
-      'Medical AI',
-      'Deep Learning',
-      'Image Analysis',
-      'Clinical Applications'
+      'Chemistry',
+      'Materials Science',
+      'Renewable Energy',
+      'Nanotechnology'
     ],
-    imageUrl: '/api/placeholder/200/200'
-  },
-
-  'michael-chen': {
-    id: 'michael-chen',
-    name: 'Prof. Michael Chen',
-    title: 'Lecturer',
-    email: 'michael.chen@university.edu',
-    homePage: 'https://www.university.edu/faculty/michael-chen',
-    googleScholar: 'https://scholar.google.com/citations?user=example3',
-    linkedin: 'https://www.linkedin.com/in/michael-chen-nlp',
-    affiliations: [
-      'Lecturer in Natural Language Processing',
-      'Member, AI Ethics Committee',
-      'Affiliate, Centre for Digital Humanities'
-    ],
-    biography: `Professor Michael Chen is a Lecturer specializing in natural language processing and AI ethics. His research addresses fundamental challenges in language understanding, generation, and the ethical implications of AI systems.
-
-He has been at the forefront of research into bias detection and mitigation in language models, and has contributed significantly to the development of fair and transparent AI systems. His work bridges technical innovation with societal impact.
-
-Michael regularly consults for major technology companies on AI ethics and responsible AI deployment strategies.`,
-    education: [
-      {
-        institution: 'Carnegie Mellon University',
-        degree: 'PhD in Language Technologies',
-        years: '2012-2017'
-      },
-      {
-        institution: 'University of Toronto',
-        degree: 'MSc in Computer Science',
-        years: '2010-2012'
-      }
-    ],
-    researchInterests: [
-      'Natural Language Processing',
-      'AI Ethics',
-      'Machine Learning',
-      'Bias Detection',
-      'Language Models'
-    ],
-    imageUrl: '/api/placeholder/200/200'
+    imageUrl: '/images/team/GAO Danpeng.jpg'
   }
 }
 
 export const alumni: Record<string, TeamMember> = {
-  'thomas-anderson': {
-    id: 'thomas-anderson',
-    name: 'Dr. Thomas Anderson',
-    title: 'Former Research Fellow',
-    currentPosition: 'Ass. Prof @ MIT',
-    email: 'thomas.anderson@mit.edu',
+  'libo': {
+    id: 'libo',
+    name: 'Prof. LI Bo (李博)',
+    title: 'Former Postdoctoral Fellow',
+    currentPosition: 'Professor @ Central South University',
+    email: 'boli72@csu.edu.cn',
     affiliations: [
-      'Assistant Professor at MIT',
-      'Former Research Fellow, AI Research Lab'
+      'Professor',
+      'School of Materials Science and Engineering',
+      'Central South University'
     ],
-    biography: `Dr. Thomas Anderson is now an Assistant Professor at MIT. During his time at our lab, he focused on reinforcement learning and autonomous systems.`,
+    biography: `Prof. LI Bo is currently a Professor at the School of Materials Science and Engineering, Central South University. He serves as a supervisor for both PhD and Master's students and was selected for the National Overseas High-level Young Talents Program (Overseas Young Talents) in 2024.
+
+During his time at ICARE Lab, Prof. Li focused on advanced materials research with particular emphasis on energy applications. His work contributed significantly to the understanding of material interfaces and their role in renewable energy devices.
+
+Prof. Li's research has been widely recognized in the materials science community, and his selection for the prestigious national talent program reflects his outstanding contributions to the field.`,
     education: [
       {
-        institution: 'University',
-        degree: 'PhD in Machine Learning',
-        years: '2018-2022'
+        institution: 'University (Details to be added)',
+        degree: 'PhD in Materials Science',
+        years: 'To be confirmed'
       }
     ],
     researchInterests: [
-      'Reinforcement Learning',
-      'Autonomous Systems',
-      'Multi-agent Systems'
+      'Materials Science and Engineering',
+      'Energy Materials',
+      'Advanced Characterization'
     ],
-    imageUrl: '/api/placeholder/200/200',
+    imageUrl: '/images/team/libo.jpg',
     isAlumni: true
   }
 }

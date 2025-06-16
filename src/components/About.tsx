@@ -100,7 +100,7 @@ const About = () => {
             </div>
             
             <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-6 rounded-xl border border-gray-200">
-              <h4 className="text-lg font-semibold text-gray-900 mb-3">Laboratory Director</h4>
+              <h4 className="text-lg font-semibold text-gray-900 mb-3">Principal Investigator</h4>
               <p className="text-gray-700 text-sm leading-relaxed">
                 <strong>Prof. ZHU Zonglong</strong> - Chair Professor at City University of Hong Kong, 
                 leading innovative research in perovskite solar cells, organic photovoltaics, and 
