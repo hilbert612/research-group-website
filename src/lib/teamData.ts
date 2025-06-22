@@ -70,7 +70,7 @@ Dr. Zhu has published extensively in top-tier journals including Science, Nature
   
   'danpeng-gao': {
     id: 'danpeng-gao',
-    name: 'Dr. Gao Danpeng',
+    name: 'Dr. GAO Danpeng',
     title: 'Research Fellow',
     email: 'dp.gao@cityu.edu.hk',
     googleScholar: 'https://scholar.google.com/citations?hl=zh-CN&user=QmNhp_oAAAAJ&view_op=list_works&sortby=pubdate',

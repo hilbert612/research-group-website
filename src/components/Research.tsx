@@ -80,31 +80,7 @@ const Research = () => {
           })}
         </div>
 
-        <div className="text-center mt-16">
-          <div className="space-y-4">
-            <h3 className="text-2xl font-semibold text-gray-900">
-              Pioneering the Future of Clean Energy
-            </h3>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Through the synergy of AI and advanced materials, we&apos;re accelerating the development 
-              of next-generation energy technologies for a sustainable future.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
-              <a
-                href="#publications"
-                className="bg-gradient-to-r from-blue-600 to-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-green-700 transition-all duration-200 shadow-lg"
-              >
-                View Our Publications
-              </a>
-              <a
-                href="#team"
-                className="border-2 border-green-600 text-green-600 px-8 py-3 rounded-lg font-semibold hover:bg-green-50 transition-colors duration-200"
-              >
-                Meet Our Team
-              </a>
-            </div>
-          </div>
-        </div>
+
       </div>
     </section>
   )

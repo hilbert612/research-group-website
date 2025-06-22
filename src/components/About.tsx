@@ -1,4 +1,4 @@
-import { Cpu, Battery, Target, Microscope, Zap, Beaker } from 'lucide-react'
+import { Cpu, Battery, Target, Microscope, Zap, Beaker, BookOpen, Users, Award, Lightbulb } from 'lucide-react'
 import { SolarPanelIcon, MolecularIcon } from './icons/CustomIcons'
 
 const About = () => {
@@ -33,31 +33,31 @@ const About = () => {
             <div className="grid grid-cols-2 gap-6 mt-8">
               <div className="text-center p-4 bg-gradient-to-br from-blue-50 to-green-50 rounded-lg border border-blue-100">
                 <div className="flex justify-center mb-2">
-                  <Zap className="w-6 h-6 text-blue-600" />
-                </div>
-                <div className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">25%+</div>
-                <div className="text-gray-600 text-sm">Perovskite Cell Efficiency</div>
-              </div>
-              <div className="text-center p-4 bg-gradient-to-br from-blue-50 to-green-50 rounded-lg border border-blue-100">
-                <div className="flex justify-center mb-2">
-                  <Beaker className="w-6 h-6 text-blue-600" />
+                  <BookOpen className="w-6 h-6 text-blue-600" />
                 </div>
                 <div className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">100+</div>
                 <div className="text-gray-600 text-sm">Publications</div>
               </div>
               <div className="text-center p-4 bg-gradient-to-br from-blue-50 to-green-50 rounded-lg border border-blue-100">
                 <div className="flex justify-center mb-2">
-                  <Microscope className="w-6 h-6 text-blue-600" />
+                  <Lightbulb className="w-6 h-6 text-blue-600" />
                 </div>
-                <div className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">2000+</div>
-                <div className="text-gray-600 text-sm">Hours Stability Test</div>
+                <div className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">28</div>
+                <div className="text-gray-600 text-sm">Research Projects</div>
               </div>
               <div className="text-center p-4 bg-gradient-to-br from-blue-50 to-green-50 rounded-lg border border-blue-100">
                 <div className="flex justify-center mb-2">
-                  <Cpu className="w-6 h-6 text-blue-600" />
+                  <Users className="w-6 h-6 text-blue-600" />
                 </div>
-                <div className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">15+</div>
-                <div className="text-gray-600 text-sm">AI Models Developed</div>
+                <div className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">20+</div>
+                <div className="text-gray-600 text-sm">Team Members</div>
+              </div>
+              <div className="text-center p-4 bg-gradient-to-br from-blue-50 to-green-50 rounded-lg border border-blue-100">
+                <div className="flex justify-center mb-2">
+                  <Award className="w-6 h-6 text-blue-600" />
+                </div>
+                <div className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">10+</div>
+                <div className="text-gray-600 text-sm">Patents</div>
               </div>
             </div>
           </div>
