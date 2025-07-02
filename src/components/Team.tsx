@@ -7,11 +7,11 @@ const Team = () => {
     name: "Prof. ZHU Zonglong",
     title: "Chair Professor & Principal Investigator",
     positions: [
-      "Chair Professor of Department of Chemistry",
+      "Chair Professor of Chemistry and Photovoltaic Technology",
       "City University of Hong Kong", 
       "Research Grants Coordinator (CSCI)",
     ],
-    description: "Professor ZHU Zonglong is a Chair Professor at the Department of Chemistry, City University of Hong Kong, and Principal Investigator of the Intelligent Chemistry and Advanced Materials for Renewable Energy. His research addresses challenges at the intersection of materials innovation and renewable energy applications.",
+    description: "Professor ZHU Zonglong is a Chair Professor of Chemistry and Photovoltaic Technology at the Department of Chemistry, City University of Hong Kong, and Principal Investigator of the Intelligent Chemistry and Advanced Materials for Renewable Energy. His research addresses challenges at the intersection of materials innovation and renewable energy applications.",
     imageUrl: "/images/team/zonglong-zhu.jpg",
     email: "zonglzhu@cityu.edu.hk"
   }
@@ -32,7 +32,7 @@ const Team = () => {
               <img 
                 src={director.imageUrl} 
                 alt={director.name}
-                className="w-32 h-32 bg-gray-200 rounded-lg object-cover"
+                className="w-48 h-56 bg-gray-200 rounded-lg object-cover"
               />
             </div>
             <div className="flex-1">
@@ -76,10 +76,10 @@ const Team = () => {
                       <img
                         src={member.imageUrl}
                         alt={member.name}
-                        className="w-16 h-16 bg-gray-200 rounded-lg object-cover"
+                        className="w-24 h-28 bg-gray-200 rounded-lg object-cover"
                       />
                     ) : (
-                      <div className="w-16 h-16 bg-gray-200 rounded-lg flex items-center justify-center">
+                      <div className="w-24 h-28 bg-gray-200 rounded-lg flex items-center justify-center">
                         <span className="text-gray-500 text-xs">Photo</span>
                       </div>
                     )}
@@ -113,10 +113,10 @@ const Team = () => {
                       <img 
                         src={alumnus.imageUrl} 
                         alt={alumnus.name}
-                        className="w-16 h-16 bg-gray-200 rounded-lg object-cover"
+                        className="w-24 h-28 bg-gray-200 rounded-lg object-cover"
                       />
                     ) : (
-                      <div className="w-16 h-16 bg-gray-200 rounded-lg flex items-center justify-center">
+                      <div className="w-24 h-28 bg-gray-200 rounded-lg flex items-center justify-center">
                         <span className="text-gray-500 text-xs">Photo</span>
                       </div>
                     )}
