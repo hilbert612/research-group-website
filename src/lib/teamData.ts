@@ -13,10 +13,10 @@ export interface TeamMember {
   education: Array<{
     institution: string
     degree: string
-    years: string
+    years?: string
   }>
   researchInterests: string[]
-  imageUrl: string
+  imageUrl?: string
   isPrincipalInvestigator?: boolean
   isAlumni?: boolean
   currentPosition?: string // For alumni
@@ -46,13 +46,11 @@ Dr. Zhu has published extensively in top-tier journals including Science, Nature
     education: [
       {
         institution: 'Hong Kong University of Science and Technology (HKUST)',
-        degree: 'PhD',
-        years: '2011-2015'
+        degree: 'PhD'
       },
       {
         institution: 'Nanjing University',
-        degree: 'B.S. degree (Chemistry)',
-        years: '2006-2010'
+        degree: 'B.S. degree (Chemistry)'
       }
     ],
     researchInterests: [
@@ -86,15 +84,13 @@ He completed his PhD in Chemistry at City University of Hong Kong and has publis
     education: [
       {
         institution: 'City University of Hong Kong',
-        degree: 'PhD in Chemistry',
-        years: '2021-2024'
+        degree: 'PhD in Chemistry'
       }
     ],
     researchInterests: [
       'Chemistry',
       'Materials Science',
-      'Renewable Energy',
-      'Nanotechnology'
+      'Renewable Energy'
     ],
     imageUrl: '/images/team/GAO Danpeng.jpg'
   },
@@ -114,25 +110,21 @@ He completed his PhD in Chemistry at City University of Hong Kong and has publis
     education: [
       {
         institution: 'City University of Hong Kong',
-        degree: 'PhD',
-        years: '2019-2022'
+        degree: 'PhD'
       },
       {
         institution: 'Beihang University',
-        degree: 'Master in Chemistry',
-        years: '2016-2019'
+        degree: 'Master in Chemistry'
       },
       {
         institution: 'Beihang University',
-        degree: 'Bachelor in Chemistry',
-        years: '2012-2016'
+        degree: 'Bachelor in Chemistry'
       }
     ],
     researchInterests: [
       'Perovskite Materials',
       'Tandem Solar Cells',
-      'Carbon-based Perovskite Solar Cells',
-      'Inverted Perovskite Solar Cells'
+      'Carbon-based Perovskite Solar Cells'
     ],
     imageUrl: '/images/team/xin-wu.jpg'
   },
@@ -152,18 +144,15 @@ He completed his PhD in Chemistry at City University of Hong Kong and has publis
     education: [
       {
         institution: 'City University of Hong Kong',
-        degree: 'PhD in Chemistry',
-        years: '2020-2024'
+        degree: 'PhD in Chemistry'
       },
       {
         institution: 'Tianjin University',
-        degree: 'Master in Chemical Engineering',
-        years: '2017-2020'
+        degree: 'Master in Chemical Engineering'
       },
       {
         institution: 'Tianjin University',
-        degree: 'Bachelor in Chemical Engineering and Technology',
-        years: '2013-2017'
+        degree: 'Bachelor in Chemical Engineering and Technology'
       }
     ],
     researchInterests: [
@@ -183,12 +172,11 @@ He completed his PhD in Chemistry at City University of Hong Kong and has publis
       'Department of Chemistry',
       'City University of Hong Kong'
     ],
-    biography: `Dr. Gong Jie is focused on materials engineering for photovoltaics and batteries, with research interests in advanced materials design, interface engineering, and energy device optimization. He has published 7 SCI papers as first author in prestigious journals such as ACS Nano and Advanced Functional Materials. His work emphasizes the development of high-efficiency, stable energy conversion and storage systems through innovative materials and device architectures. Current efforts aim to advance next-generation materials for sustainable energy technologies.`,
+    biography: `Dr. Gong Jie is focused on materials engineering for photovoltaics and batteries, with research interests in advanced materials design, interface engineering, and energy device optimization. She has published 7 SCI papers as first author in prestigious journals such as ACS Nano and Advanced Functional Materials. Her work emphasizes the development of high-efficiency, stable energy conversion and storage systems through innovative materials and device architectures. Current efforts aim to advance next-generation materials for sustainable energy technologies.`,
     education: [
       {
         institution: 'Shandong University',
-        degree: 'PhD in Materials Science and Engineering',
-        years: ''
+        degree: 'PhD in Materials Science and Engineering'
       }
     ],
     researchInterests: [
@@ -214,13 +202,11 @@ He completed his PhD in Chemistry at City University of Hong Kong and has publis
     education: [
       {
         institution: 'Fudan University',
-        degree: 'PhD in Polymer Chemistry and Physics',
-        years: 'To be confirmed'
+        degree: 'PhD in Polymer Chemistry and Physics'
       },
       {
         institution: 'Sichuan University',
-        degree: 'Bachelor in Polymer Materials and Engineering',
-        years: 'To be confirmed'
+        degree: 'Bachelor in Polymer Materials and Engineering'
       }
     ],
     researchInterests: [
@@ -247,20 +233,17 @@ He completed his PhD in Chemistry at City University of Hong Kong and has publis
     education: [
       {
         institution: 'University of Chinese Academy of Sciences',
-        degree: 'PhD in Materials Science',
-        years: 'To be confirmed'
+        degree: 'PhD in Materials Science'
       },
       {
         institution: 'Liaoning University',
-        degree: 'Bachelor in Materials Chemistry',
-        years: 'To be confirmed'
+        degree: 'Bachelor in Materials Chemistry'
       }
     ],
     researchInterests: [
       'Organic Semiconductor Materials',
       'Molecular Design',
-      'Chemical Synthesis',
-      'Optoelectronic Devices'
+      'Chemical Synthesis'
     ],
     imageUrl: '/images/team/lei-yang.jpg'
   },
@@ -281,18 +264,15 @@ He completed his PhD in Chemistry at City University of Hong Kong and has publis
     education: [
       {
         institution: 'City University of Hong Kong',
-        degree: 'PhD in Chemistry',
-        years: 'To be confirmed'
+        degree: 'PhD in Chemistry'
       },
       {
         institution: 'Zhejiang University',
-        degree: 'Master in Materials Engineering',
-        years: 'To be confirmed'
+        degree: 'Master in Materials Engineering'
       },
       {
         institution: 'Zhejiang University',
-        degree: 'Bachelor in Materials Science and Engineering',
-        years: 'To be confirmed'
+        degree: 'Bachelor in Materials Science and Engineering'
       }
     ],
     researchInterests: [
@@ -319,26 +299,57 @@ He completed his PhD in Chemistry at City University of Hong Kong and has publis
     education: [
       {
         institution: 'King Abdullah University of Science and Technology (KAUST)',
-        degree: 'PhD',
-        years: 'To be confirmed'
+        degree: 'PhD'
       },
       {
         institution: 'University of Electronic Science and Technology of China',
-        degree: 'Master of Science',
-        years: 'To be confirmed'
+        degree: 'Master of Science'
       },
       {
         institution: 'University of Electronic Science and Technology of China',
-        degree: 'Bachelor of Science',
-        years: 'To be confirmed'
+        degree: 'Bachelor of Science'
       }
     ],
     researchInterests: [
       'Perovskite Photovoltaics',
       'Functional Materials Design'
-      
     ],
     imageUrl: '/images/team/bingyao-shao.jpg'
+  },
+  
+  'yan-wang': {
+    id: 'yan-wang',
+    name: 'Dr. WANG Yan',
+    title: 'Postdoctoral Fellow',
+    email: 'ywang2735-c@my.cityu.edu.hk',
+    googleScholar: 'https://scholar.google.com/citations?user=crBQCdoAAAAJ&hl=zh-CN',
+    orcid: 'https://orcid.org/0000-0002-3341-1469',
+    affiliations: [
+      'Postdoctoral Fellow',
+      'Department of Chemistry',
+      'City University of Hong Kong'
+    ],
+    biography: `Yan earned his bachelor's degree in Chemistry as part of the Zhi Yuan Honors Program at Shanghai Jiao Tong University in 2018. He continued his studies at the same institution, obtaining a master's degree in 2021. Following his master's graduation, Yan pursued a Ph.D. at City University of Hong Kong (CityU) starting in 2021. His research focuses on organic solar cells and flexible electronic devices.`,
+    education: [
+      {
+        institution: 'City University of Hong Kong',
+        degree: 'PhD in Chemistry'
+      },
+      {
+        institution: 'Shanghai Jiao Tong University',
+        degree: 'Master in Chemistry'
+      },
+      {
+        institution: 'Shanghai Jiao Tong University',
+        degree: 'Bachelor in Chemistry (Zhi Yuan Honors Program)'
+      }
+    ],
+    researchInterests: [
+      'Organic Solar Cells',
+      'Flexible Electronic Devices',
+      'Materials Chemistry'
+    ],
+    imageUrl: '/images/team/yan-wang.png'
   },
   
   'dong-zhang': {
@@ -356,24 +367,20 @@ He completed his PhD in Chemistry at City University of Hong Kong and has publis
     education: [
       {
         institution: 'City University of Hong Kong',
-        degree: 'PhD in Chemistry',
-        years: 'Current'
+        degree: 'PhD in Chemistry'
       },
       {
         institution: 'Chongqing University',
-        degree: 'Master in Mechanical Engineering',
-        years: '2017-2020'
+        degree: 'Master in Mechanical Engineering'
       },
       {
         institution: 'Chongqing University',
-        degree: 'Bachelor in Mechanical Design, Manufacturing and Automation',
-        years: '2013-2017'
+        degree: 'Bachelor in Mechanical Design, Manufacturing and Automation'
       }
     ],
     researchInterests: [
       'Perovskite/Organic Tandem Solar Cells',
-      'Photovoltaic Devices',
-      'Device Fabrication'
+      'Photovoltaic Devices'
     ],
     imageUrl: '/images/team/dong-zhang.jpg'
   },
@@ -393,25 +400,21 @@ He completed his PhD in Chemistry at City University of Hong Kong and has publis
     education: [
       {
         institution: 'City University of Hong Kong',
-        degree: 'PhD in Chemistry',
-        years: '2022-Present'
+        degree: 'PhD in Chemistry'
       },
       {
         institution: 'East China University of Science and Technology',
-        degree: 'Master',
-        years: 'To be confirmed'
+        degree: 'Master'
       },
       {
         institution: 'East China University of Science and Technology',
-        degree: 'Bachelor',
-        years: 'To be confirmed'
+        degree: 'Bachelor'
       }
     ],
     researchInterests: [
       'Flexible Perovskite Solar Cells',
       'Compositional Engineering',
-      'Interface Passivation',
-      'Crystallization Control'
+      'Interface Passivation'
     ],
     imageUrl: '/images/team/jianqiu-gong.jpg'
   },
@@ -430,27 +433,56 @@ He completed his PhD in Chemistry at City University of Hong Kong and has publis
     education: [
       {
         institution: 'City University of Hong Kong',
-        degree: 'PhD in Chemistry',
-        years: '2022-Present'
+        degree: 'PhD in Chemistry'
       },
       {
         institution: 'South China University of Technology',
-        degree: 'Master in Materials Science and Engineering',
-        years: '2019-2022'
+        degree: 'Master in Materials Science and Engineering'
       },
       {
         institution: 'Central South University',
-        degree: 'Bachelor in Materials Chemistry',
-        years: '2015-2019'
+        degree: 'Bachelor in Materials Chemistry'
       }
     ],
     researchInterests: [
       'Perovskite Solar Cells',
       'Compositional Engineering',
-      'Crystallization Control',
-      'Device Stability'
+      'Crystallization Control'
     ],
     imageUrl: '/images/team/shuai-li.jpg'
+  },
+  
+  'hang-zhang': {
+    id: 'hang-zhang',
+    name: 'ZHANG Hang',
+    title: 'PhD Student',
+    email: 'hzhang725-c@my.cityu.edu.hk',
+    affiliations: [
+      'PhD Student',
+      'Department of Chemistry',
+      'City University of Hong Kong'
+    ],
+    biography: `Zhang Hang received his Bachelor's and Master's degrees from Zhengzhou University and University of Science and Technology of China in 2016 and 2019, respectively. His current research focuses on the development of halide cathodes materials based on halogen conversion for aqueous zinc batteries and lithium batteries.`,
+    education: [
+      {
+        institution: 'City University of Hong Kong',
+        degree: 'PhD in Chemistry'
+      },
+      {
+        institution: 'University of Science and Technology of China',
+        degree: 'Master of Science'
+      },
+      {
+        institution: 'Zhengzhou University',
+        degree: 'Bachelor of Science'
+      }
+    ],
+    researchInterests: [
+      'Halide Cathodes Materials',
+      'Aqueous Zinc Batteries',
+      'Lithium Batteries'
+    ],
+    imageUrl: '/images/team/hang-zhang.jpg'
   },
   
   'baoze-liu': {
@@ -468,20 +500,17 @@ He completed his PhD in Chemistry at City University of Hong Kong and has publis
     education: [
       {
         institution: 'City University of Hong Kong',
-        degree: 'PhD in Chemistry',
-        years: '2023-Present'
+        degree: 'PhD in Chemistry'
       },
       {
         institution: 'Central South University',
-        degree: 'Bachelor in Physics',
-        years: '2018-2022'
+        degree: 'Bachelor in Physics'
       }
     ],
     researchInterests: [
       'Perovskite/Organic Photovoltaics',
       'Tandem Solar Cells',
-      'Device Stability',
-      'Materials Science'
+      'Device Stability'
     ],
     imageUrl: '/images/team/baoze-liu.jpg'
   },
@@ -500,25 +529,21 @@ He completed his PhD in Chemistry at City University of Hong Kong and has publis
     education: [
       {
         institution: 'City University of Hong Kong',
-        degree: 'PhD in Chemistry',
-        years: 'Current'
+        degree: 'PhD in Chemistry'
       },
       {
         institution: 'Beijing Institute of Technology',
-        degree: 'Master',
-        years: 'To be confirmed'
+        degree: 'Master'
       },
       {
         institution: 'China University of Geoscience in Beijing',
-        degree: 'Bachelor',
-        years: 'To be confirmed'
+        degree: 'Bachelor'
       }
     ],
     researchInterests: [
       'Perovskite/Silicon Tandem Solar Cells',
       'Device Architecture Design',
-      'Interface Engineering',
-      'Long-term Stability'
+      'Interface Engineering'
     ],
     imageUrl: '/images/team/lina-wang.jpg'
   },
@@ -538,13 +563,11 @@ He completed his PhD in Chemistry at City University of Hong Kong and has publis
     education: [
       {
         institution: 'City University of Hong Kong',
-        degree: 'PhD in Chemistry',
-        years: '2023-Present'
+        degree: 'PhD in Chemistry'
       },
       {
         institution: 'Renmin University of China',
-        degree: 'Bachelor in Chemistry',
-        years: '2018-2022'
+        degree: 'Bachelor in Chemistry'
       }
     ],
     researchInterests: [
@@ -570,92 +593,201 @@ He completed his PhD in Chemistry at City University of Hong Kong and has publis
     education: [
       {
         institution: 'City University of Hong Kong',
-        degree: 'PhD in Chemistry',
-        years: 'Current'
+        degree: 'PhD in Chemistry'
       },
       {
         institution: 'City University of Hong Kong',
-        degree: 'Master in Chemistry',
-        years: 'To be confirmed'
+        degree: 'Master in Chemistry'
       },
       {
         institution: 'Nanjing University',
-        degree: 'Bachelor in Materials Physics',
-        years: 'To be confirmed'
+        degree: 'Bachelor in Materials Physics'
       }
     ],
     researchInterests: [
       'Materials Science',
       'New Energy',
-      'Power Investment',
-      'Renewable Energy'
+      'Power Investment'
     ],
     imageUrl: '/images/team/ning-wang.jpg'
+  },
+  
+  'zexin-yu': {
+    id: 'zexin-yu',
+    name: 'YU Zexin',
+    title: 'PhD Student',
+    email: 'zexinyu2-c@my.cityu.edu.hk',
+    orcid: 'https://orcid.org/0009-0008-5922-8954',
+    affiliations: [
+      'PhD Student',
+      'Department of Chemistry',
+      'City University of Hong Kong'
+    ],
+    biography: `Yu Zexin graduated from the Department of Chemistry at Renmin University of China, earning his Bachelor's degree in Chemistry in 2022. Since graduating, Yu has been actively engaged in research within the field of optoelectronics, particularly focusing on solar energy technologies and their environmental impacts. His current research areas include characterization techniques for optoelectronic materials, space photovoltaic technologies, the development of high-performance perovskite solar cells, and the environmental issues associated with these technologies.`,
+    education: [
+      {
+        institution: 'City University of Hong Kong',
+        degree: 'PhD in Chemistry'
+      },
+      {
+        institution: 'Renmin University of China',
+        degree: 'Bachelor in Chemistry'
+      }
+    ],
+    researchInterests: [
+      'Optoelectronics',
+      'Perovskite Solar Cells',
+      'Space Photovoltaic Technologies'
+    ],
+    imageUrl: '/images/team/zexin-yu.jpg'
+  },
+  
+  'francesco-vanin': {
+    id: 'francesco-vanin',
+    name: 'Francesco Vanin',
+    title: 'PhD Student',
+    email: 'fvanin2-c@my.cityu.edu.hk',
+    orcid: 'https://orcid.org/0009-0003-3581-3642',
+    affiliations: [
+      'PhD Student',
+      'Department of Chemistry',
+      'City University of Hong Kong'
+    ],
+    biography: `Francesco was born in Treviso (a small town near Venice) and moved to London in 2009. In the following years, he also lived in Istanbul and Dubai and hopes to continue travelling the world doing some good chemistry along the way. Francesco completed his MChem degree in Manchester, carrying out his final year project studying lanthanide covalency in the Mills group. He later moved to Imperial College for an MRes degree in the Long group, focusing on developing organometallic compounds for high-efficiency perovskite solar cells. He is now a PhD student in the Zhu group at City University of Hong Kong, focusing on developing chemical approaches to boost perovskite solar cell efficiency and stability.
+
+When not in the lab, you're likely to find him cooking food from around the world for friends and family. You might also find him running at the park in less-than-optimal weather conditions or just relaxing with a good book and a cup of coffee.`,
+    education: [
+      {
+        institution: 'City University of Hong Kong',
+        degree: 'PhD in Chemistry'
+      },
+      {
+        institution: 'Imperial College London',
+        degree: 'MRes'
+      },
+      {
+        institution: 'The University of Manchester',
+        degree: 'MChem'
+      }
+    ],
+    researchInterests: [
+      'Perovskite Solar Cells',
+      'Chemical Approaches for Solar Cell Stability',
+      'Organometallic Compounds'
+    ],
+    imageUrl: '/images/team/francesco-vanin.jpg'
+  },
+  
+  'weidong-tian': {
+    id: 'weidong-tian',
+    name: 'TIAN Weidong',
+    title: 'PhD Student',
+    email: 'wdtian2-c@my.cityu.edu.hk',
+    orcid: 'https://orcid.org/0000-0002-8980-697X',
+    affiliations: [
+      'PhD Student',
+      'Department of Chemistry',
+      'City University of Hong Kong'
+    ],
+    biography: `Tian Weidong received his B.S. degree (2020) from Dalian University of Technology, and M.S. degree (2023) from Shandong University. His research interest is high-performance perovskite/organic tandem solar cells.`,
+    education: [
+      {
+        institution: 'City University of Hong Kong',
+        degree: 'PhD in Chemistry'
+      },
+      {
+        institution: 'Shandong University',
+        degree: 'Master of Science'
+      },
+      {
+        institution: 'Dalian University of Technology',
+        degree: 'Bachelor of Science'
+      }
+    ],
+    researchInterests: [
+      'Perovskite/Organic Tandem Solar Cells',
+      'High-Performance Photovoltaics'
+    ],
+    imageUrl: '/images/team/weidong-tian.jpg'
+  },
+  
+  'chang-chen': {
+    id: 'chang-chen',
+    name: 'CHEN Chang',
+    title: 'PhD Student',
+    email: 'c976631792@outlook.com',
+    affiliations: [
+      'PhD Student',
+      'Department of Chemistry',
+      'City University of Hong Kong'
+    ],
+    biography: `Chen Chang received his M.Eng. degree in Resources and Environmental Engineering at South China University of Technology. He is currently a Ph.D candidate with research focused on high-performance perovskite-based tandem solar cells.`,
+    education: [
+      {
+        institution: 'City University of Hong Kong',
+        degree: 'PhD in Chemistry'
+      },
+      {
+        institution: 'South China University of Technology',
+        degree: 'M.Eng. in Resources and Environmental Engineering'
+      }
+    ],
+    researchInterests: [
+      'Perovskite-based Tandem Solar Cells',
+      'High-Performance Photovoltaics',
+      'Materials Science'
+    ],
+    imageUrl: '/images/team/chang-chen.jpg'
   }
 }
 
 export const alumni: Record<string, TeamMember> = {
   'libo': {
     id: 'libo',
-    name: 'Prof. LI Bo (李博)',
+    name: 'Prof. LI Bo',
     title: 'Former Postdoctoral Fellow',
     currentPosition: 'Professor @ Central South University',
-    email: 'boli72@csu.edu.cn',
-    affiliations: [
-      'Professor',
-      'School of Materials Science and Engineering',
-      'Central South University'
-    ],
-    biography: `Prof. LI Bo is currently a Professor at the School of Materials Science and Engineering, Central South University. He serves as a supervisor for both PhD and Master's students and was selected for the National Overseas High-level Young Talents Program (Overseas Young Talents) in 2024.
-
-During his time at ICARE Lab, Prof. Li focused on advanced materials research with particular emphasis on energy applications. His work contributed significantly to the understanding of material interfaces and their role in renewable energy devices.
-
-Prof. Li's research has been widely recognized in the materials science community, and his selection for the prestigious national talent program reflects his outstanding contributions to the field.`,
-    education: [
-      {
-        institution: 'University (Details to be added)',
-        degree: 'PhD in Materials Science',
-        years: 'To be confirmed'
-      }
-    ],
-    researchInterests: [
-      'Materials Science and Engineering',
-      'Energy Materials',
-      'Advanced Characterization'
-    ],
-    imageUrl: '/images/team/libo.jpg',
+    email: '',
+    affiliations: [],
+    biography: '',
+    education: [],
+    researchInterests: [],
     isAlumni: true
   },
   'dan-zhao': {
     id: 'dan-zhao',
-    name: 'Assoc. Prof. ZHAO Dan',
+    name: 'Prof. ZHAO Dan',
     title: 'Former Postdoctoral Fellow',
     currentPosition: 'Associate Professor @ University of Electronic Science and Technology of China',
-    email: 'danzhao@uestc.edu.cn',
-    affiliations: [
-      'Associate Professor',
-      'School of Automation Engineering',
-      'University of Electronic Science and Technology of China'
-    ],
-    biography: `Dr. Zhao Dan received his PhD from the University of Electronic Science and Technology of China under the supervision of Prof. Yu Junsheng. During his doctoral studies, he spent two years as a joint PhD student in Prof. Tobin Marks' group (Member of the US National Academy of Sciences and National Academy of Engineering) at Northwestern University. After graduation, he worked as a postdoctoral researcher for two years in Prof. Zhu Zonglong's group at City University of Hong Kong.
-
-Currently, he is an Associate Professor at the University of Electronic Science and Technology of China. He has been selected for the National Overseas High-level Talents Program and the Shandong Province Taishan Scholars Young Expert Program. He leads several research projects, including a sub-project of the National Key R&D Program, a Sichuan Province General Project, and a China Aviation Science Foundation project.
-
-His research focuses on optoelectronic detection and intelligent sensing. He has published over 30 papers in SCI journals, with 15 papers as first author or corresponding author in prestigious international journals such as Advanced Materials, JACS, and Advanced Functional Materials. He also holds 4 invention patents.`,
-    education: [
-      {
-        institution: 'University of Electronic Science and Technology of China',
-        degree: 'PhD in Optical Engineering',
-        years: 'To be confirmed'
-      }
-    ],
-    researchInterests: [
-      'Optoelectronic Detection',
-      'Intelligent Sensing',
-      'Materials Science',
-      'Device Physics'
-    ],
-    imageUrl: '/images/team/dan-zhao.jpg',
+    email: '',
+    affiliations: [],
+    biography: '',
+    education: [],
+    researchInterests: [],
+    isAlumni: true
+  },
+  'xianglang-sun': {
+    id: 'xianglang-sun',
+    name: 'Prof. SUN Xianglang',
+    title: 'Former Postdoctoral Fellow',
+    currentPosition: 'Associate Professor @ Huazhong University of Science and Technology',
+    email: '',
+    affiliations: [],
+    biography: '',
+    education: [],
+    researchInterests: [],
+    isAlumni: true
+  },
+  'zhen-li': {
+    id: 'zhen-li',
+    name: 'Dr. LI Zhen',
+    title: 'Former PhD Student',
+    currentPosition: 'ARC DECRA Research Fellow @ University of New South Wales',
+    email: '',
+    affiliations: [],
+    biography: '',
+    education: [],
+    researchInterests: [],
     isAlumni: true
   }
 }

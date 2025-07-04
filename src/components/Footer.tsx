@@ -4,13 +4,12 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="col-span-2">
-            <h3 className="text-2xl font-bold mb-4">AI Research Lab</h3>
+            <h3 className="text-2xl font-bold mb-4">ICARE Lab</h3>
             <p className="text-gray-300 mb-4">
-              Advancing the future of artificial intelligence through cutting-edge research 
-              and innovative solutions that benefit humanity.
+              Intelligent Chemistry and Advanced Materials for Renewable Energy Laboratory - Pioneering the future of sustainable energy technologies
             </p>
             <p className="text-gray-400 text-sm">
-              © 2024 AI Research Lab. All rights reserved.
+              © 2024 ICARE Lab. All rights reserved.
             </p>
           </div>
 
@@ -28,10 +27,10 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
             <ul className="space-y-2 text-gray-300">
-              <li>contact@airesearchlab.edu</li>
-              <li>+1 (555) 123-4567</li>
-              <li>123 Research Drive</li>
-              <li>Tech City, TC 12345</li>
+              <li>zonglzhu@cityu.edu.hk</li>
+              <li>+852 3442-0522</li>
+              <li>Department of Chemistry</li>
+              <li>City University of Hong Kong</li>
             </ul>
           </div>
         </div>

@@ -18,6 +18,8 @@ const Team = () => {
 
   // 动态获取团队成员和校友
   const teamMembers = getAllMembers().filter(m => !m.isPrincipalInvestigator)
+  const postdocs = teamMembers.filter(member => member.title.includes('Postdoctoral') || member.title.includes('Research Fellow') || member.title.includes('JC STEM') || member.title.includes('RGC'))
+  const phdStudents = teamMembers.filter(member => member.title.includes('PhD Student'))
   const alumni = getAllAlumni()
 
   return (
@@ -64,11 +66,48 @@ const Team = () => {
           </div>
         </div>
 
-        {/* Team Section */}
+        {/* Postdoctoral Fellows Section */}
         <div className="mb-16">
-          <h2 className="text-2xl font-bold text-gray-900 mb-8">Team</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-8">Postdoctoral Fellow</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {teamMembers.map((member, index) => (
+            {postdocs.map((member, index) => (
+              <div key={index} className="group">
+                <div className="flex items-start space-x-3">
+                  <div className="flex-shrink-0">
+                    {member.imageUrl && !member.imageUrl.includes('placeholder') ? (
+                      <img
+                        src={member.imageUrl}
+                        alt={member.name}
+                        className="w-24 h-28 bg-gray-200 rounded-lg object-cover"
+                      />
+                    ) : (
+                      <div className="w-24 h-28 bg-gray-200 rounded-lg flex items-center justify-center">
+                        <span className="text-gray-500 text-xs">Photo</span>
+                      </div>
+                    )}
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    {member.id ? (
+                      <Link href={`/team/${member.id}`} className="hover:text-primary-600 transition-colors">
+                        <h4 className="text-base font-semibold text-gray-900 mb-1 hover:text-primary-600 transition-colors">{member.name}</h4>
+                      </Link>
+                    ) : (
+                      <h4 className="text-base font-semibold text-gray-900 mb-1">{member.name}</h4>
+                    )}
+                    <p className="text-primary-600 text-sm font-medium mb-2">{member.title}</p>
+                    <p className="text-gray-600 text-xs leading-relaxed">{member.researchInterests?.join(', ')}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* PhD Students Section */}
+        <div className="mb-16">
+          <h2 className="text-2xl font-bold text-gray-900 mb-8">PhD Student</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {phdStudents.map((member, index) => (
               <div key={index} className="group">
                 <div className="flex items-start space-x-3">
                   <div className="flex-shrink-0">
@@ -104,37 +143,12 @@ const Team = () => {
         {/* Alumni Section */}
         <div className="mb-12">
           <h2 className="text-2xl font-bold text-gray-900 mb-8">Alumni</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
             {alumni.map((alumnus, index) => (
-              <div key={index} className="group">
-                <div className="flex items-start space-x-3">
-                  <div className="flex-shrink-0">
-                    {alumnus.imageUrl && !alumnus.imageUrl.includes("placeholder") ? (
-                      <img 
-                        src={alumnus.imageUrl} 
-                        alt={alumnus.name}
-                        className="w-24 h-28 bg-gray-200 rounded-lg object-cover"
-                      />
-                    ) : (
-                      <div className="w-24 h-28 bg-gray-200 rounded-lg flex items-center justify-center">
-                        <span className="text-gray-500 text-xs">Photo</span>
-                      </div>
-                    )}
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    {/* Add link for Alumni who have detailed pages */}
-                    {alumnus.id === "libo" ? (
-                      <Link href="/team/libo" className="hover:text-primary-600 transition-colors">
-                        <h4 className="text-base font-semibold text-gray-900 mb-1 hover:text-primary-600 transition-colors">{alumnus.name}</h4>
-                      </Link>
-                    ) : (
-                      <h4 className="text-base font-semibold text-gray-900 mb-1">{alumnus.name}</h4>
-                    )}
-                    <p className="text-primary-600 text-sm font-medium mb-2">{alumnus.currentPosition}</p>
-                    <p className="text-gray-600 text-xs leading-relaxed mb-1">{alumnus.researchInterests?.join(', ')}</p>
-                    <p className="text-gray-500 text-xs font-medium">{alumnus.title}</p>
-                  </div>
-                </div>
+              <div key={index} className="p-4 border border-gray-100 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <h4 className="text-base font-semibold text-gray-900 mb-1">{alumnus.name}</h4>
+                <p className="text-primary-600 text-sm font-medium mb-1">{alumnus.currentPosition}</p>
+                <p className="text-gray-500 text-xs font-medium">{alumnus.title}</p>
               </div>
             ))}
           </div>
@@ -143,9 +157,7 @@ const Team = () => {
         {/* Recruitment Information */}
         <div className="bg-gray-50 rounded-lg p-6">
           <p className="text-gray-700 text-sm leading-relaxed mb-4">
-            We are always looking for new members to our team. We will advertise any funded opportunities 
-            specific to our group on LinkedIn, as well as in relevant academic mailing lists, while several 
-            scholarship schemes and fellowships are offered by the University.
+            We welcome applications from motivated individuals who wish to join our team. To apply for positions in our group, please reach out to us via the contact details below and attach your CV. We regularly have funded opportunities available, and additional scholarship schemes and fellowships are offered by the University.
           </p>
           <p className="text-gray-700 text-sm">
             For more information on how to join us, you can review our{' '}

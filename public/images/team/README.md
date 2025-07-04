@@ -44,4 +44,21 @@
 ## 示例代码
 ```typescript
 imageUrl: '/images/team/zonglong-zhu.jpg'
-``` 
+```
+
+## Image Requirements
+- Recommended size: 400x400 pixels (square)
+- Format: JPG or PNG
+- File size: < 500KB
+- Naming convention: Use the team member's ID as the filename (e.g., `john-smith.jpg`)
+
+## Missing Images
+The following team members need images:
+- yan-wang.png - Dr. WANG Yan (Postdoctoral Fellow)
+- hang-zhang.jpg - ZHANG Hang (PhD Student)
+- zexin-yu.jpg - YU Zexin (PhD Student)
+- francesco-vanin.jpg - Francesco Vanin (PhD Student)
+- weidong-tian.jpg - TIAN Weidong (PhD Student)
+- chang-chen.jpg - CHEN Chang (PhD Student)
+
+Please add these images to this directory with the correct filename. 

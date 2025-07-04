@@ -1,5 +1,6 @@
 import { Cpu, Battery, Target, Microscope, Zap, Beaker, BookOpen, Users, Award, Lightbulb } from 'lucide-react'
 import { SolarPanelIcon, MolecularIcon } from './icons/CustomIcons'
+import Link from 'next/link'
 
 const About = () => {
   return (
@@ -31,34 +32,52 @@ const About = () => {
             </p>
 
             <div className="grid grid-cols-2 gap-6 mt-8">
-              <div className="text-center p-4 bg-gradient-to-br from-blue-50 to-green-50 rounded-lg border border-blue-100">
+              <a 
+                href="https://scholar.google.com/citations?user=_HSF3-oAAAAJ&hl=en&oi=ao"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-center p-4 bg-gradient-to-br from-blue-50 to-green-50 rounded-lg border border-blue-100 hover:shadow-md transition-shadow duration-300"
+              >
                 <div className="flex justify-center mb-2">
                   <BookOpen className="w-6 h-6 text-blue-600" />
                 </div>
                 <div className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">100+</div>
                 <div className="text-gray-600 text-sm">Publications</div>
-              </div>
-              <div className="text-center p-4 bg-gradient-to-br from-blue-50 to-green-50 rounded-lg border border-blue-100">
+              </a>
+              <a 
+                href="https://scholars.cityu.edu.hk/en/persons/zonglzhu/projects/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-center p-4 bg-gradient-to-br from-blue-50 to-green-50 rounded-lg border border-blue-100 hover:shadow-md transition-shadow duration-300"
+              >
                 <div className="flex justify-center mb-2">
                   <Lightbulb className="w-6 h-6 text-blue-600" />
                 </div>
                 <div className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">28</div>
                 <div className="text-gray-600 text-sm">Research Projects</div>
-              </div>
-              <div className="text-center p-4 bg-gradient-to-br from-blue-50 to-green-50 rounded-lg border border-blue-100">
+              </a>
+              <a 
+                href="#team"
+                className="text-center p-4 bg-gradient-to-br from-blue-50 to-green-50 rounded-lg border border-blue-100 hover:shadow-md transition-shadow duration-300"
+              >
                 <div className="flex justify-center mb-2">
                   <Users className="w-6 h-6 text-blue-600" />
                 </div>
                 <div className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">20+</div>
                 <div className="text-gray-600 text-sm">Team Members</div>
-              </div>
-              <div className="text-center p-4 bg-gradient-to-br from-blue-50 to-green-50 rounded-lg border border-blue-100">
+              </a>
+              <a 
+                href="https://scholars.cityu.edu.hk/en/persons/zonglzhu/publications/?type=%2Fdk%2Fatira%2Fpure%2Fresearchoutput%2Fresearchoutputtypes%2Fpatent%2Fpatent"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-center p-4 bg-gradient-to-br from-blue-50 to-green-50 rounded-lg border border-blue-100 hover:shadow-md transition-shadow duration-300"
+              >
                 <div className="flex justify-center mb-2">
                   <Award className="w-6 h-6 text-blue-600" />
                 </div>
                 <div className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">10+</div>
                 <div className="text-gray-600 text-sm">Patents</div>
-              </div>
+              </a>
             </div>
           </div>
 
