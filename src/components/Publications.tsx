@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useBibtex } from '../hooks/useBibtex';
 import { Publication } from '../utils/bibtexParser';
 import Link from 'next/link';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, ExternalLink } from 'lucide-react';
 
 const Publications = () => {
   // 使用 BibTeX 文件
@@ -87,13 +87,15 @@ const Publications = () => {
               Selected research contributions and scholarly work
             </p>
           </div>
-          <Link 
-            href="/publications" 
+          <a 
+            href="https://scholar.google.com.ua/citations?user=_HSF3-oAAAAJ&hl=en" 
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center text-blue-600 hover:text-blue-800 transition-colors"
           >
             <span className="mr-1">View all publications</span>
-            <ArrowRight size={16} />
-          </Link>
+            <ExternalLink size={16} />
+          </a>
         </div>
 
         {/* Selected Publications */}
@@ -162,12 +164,14 @@ const Publications = () => {
 
         {/* View All Publications Button */}
         <div className="mt-8 text-center">
-          <Link 
-            href="/publications" 
+          <a 
+            href="https://scholar.google.com.ua/citations?user=_HSF3-oAAAAJ&hl=en" 
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-colors"
           >
             View All Publications
-          </Link>
+          </a>
         </div>
       </div>
     </section>

@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useBibtex } from '../hooks/useBibtex';
 import { Publication } from '../utils/bibtexParser';
+import { ExternalLink } from 'lucide-react';
 
 const PublicationsDetail = () => {
   const [sortBy, setSortBy] = useState<'year' | 'title' | 'authors'>('year');
@@ -84,10 +85,16 @@ const PublicationsDetail = () => {
           </select>
         </div>
 
-        {/* 显示结果统计 */}
-        <div className="text-gray-500">
-          Showing {publications.length} publication{publications.length !== 1 ? 's' : ''}
-        </div>
+        {/* Google Scholar Link Button */}
+        <a 
+          href="https://scholar.google.com.ua/citations?user=_HSF3-oAAAAJ&hl=en" 
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center justify-center px-3 py-1.5 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-colors"
+        >
+          <span className="mr-1">Google Scholar</span>
+          <ExternalLink size={14} />
+        </a>
       </div>
 
       {/* Selected Publications */}
