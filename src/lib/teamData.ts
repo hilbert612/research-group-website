@@ -352,6 +352,101 @@ He completed his PhD in Chemistry at City University of Hong Kong and has publis
     imageUrl: '/images/team/yan-wang.png'
   },
   
+  'shiqiang-fu': {
+    id: 'shiqiang-fu',
+    name: 'Dr. FU Shiqiang',
+    title: 'Postdoctoral Fellow',
+    email: '316913224@qq.com',
+    affiliations: [
+      'Postdoctoral Fellow',
+      'Department of Chemistry',
+      'City University of Hong Kong'
+    ],
+    biography: `Dr. Fu Shiqiang obtained his Bachelor's degree in Physics from Zhongyuan University of Technology in 2009. He received his Master's degree in Condensed Matter Physics from Ningbo University in 2022 and his Doctoral degree in Materials Physics and Chemistry from Wuhan University in 2025. Currently, Dr. Fu serves as a research assistant in the Department of Chemistry at City University of Hong Kong. His recent research focuses on the physicochemical properties of perovskite materials, perovskite solar cells, and all-perovskite tandem solar cells.`,
+    education: [
+      {
+        institution: 'Wuhan University',
+        degree: 'PhD in Materials Physics and Chemistry',
+        years: '2022-2025'
+      },
+      {
+        institution: 'Ningbo University',
+        degree: 'Master in Condensed Matter Physics',
+        years: '2019-2022'
+      },
+      {
+        institution: 'Zhongyuan University of Technology',
+        degree: 'Bachelor in Applied Physics',
+        years: '2015-2019'
+      }
+    ],
+    researchInterests: [
+      'Perovskite Materials',
+      'Perovskite Solar Cells',
+      'All-Perovskite Tandem Solar Cells'
+    ],
+    imageUrl: '/images/team/shiqiang-fu.jpg'
+  },
+  
+  'mingyu-li': {
+    id: 'mingyu-li',
+    name: 'Dr. LI Mingyu',
+    title: 'Postdoctoral Fellow',
+    email: '18236902722@163.com',
+    orcid: 'https://orcid.org/0009-0004-6737-0644',
+    affiliations: [
+      'Postdoctoral Fellow',
+      'Department of Chemistry',
+      'City University of Hong Kong'
+    ],
+    biography: `Dr. Li Mingyu's research centers on perovskite-based tandem optoelectronic devices. His specific work encompasses material synthesis, the development of high-performance all-perovskite tandem solar cells, perovskite/PbS quantum dot tandem devices, and scalable fabrication technologies.`,
+    education: [
+      {
+        institution: 'Huazhong University of Science and Technology',
+        degree: 'PhD in Optical Engineering'
+      },
+      {
+        institution: 'Zhengzhou University',
+        degree: 'Bachelor in Physics'
+      }
+    ],
+    researchInterests: [
+      'Perovskite-based Tandem Optoelectronic Devices',
+      'Material Synthesis',
+      'Scalable Fabrication Technologies'
+    ],
+    imageUrl: '/images/team/mingyu-li.jpg'
+  },
+  
+  'jianan-wang': {
+    id: 'jianan-wang',
+    name: 'Dr. WANG Jianan',
+    title: 'Postdoctoral Fellow',
+    email: 'wangjianan126@163.com',
+    affiliations: [
+      'Postdoctoral Fellow',
+      'Department of Chemistry',
+      'City University of Hong Kong'
+    ],
+    biography: `Dr. Jianan Wang obtained his B.S. and Ph.D. degrees from Northeast Forestry University and Huazhong University of Science and Technology in 2020 and 2025, respectively. He is focused on all-perovskite tandem photovoltaics, with research interests in material design and interface engineering to achieve improved efficiency and stability of tandem devices.`,
+    education: [
+      {
+        institution: 'Huazhong University of Science and Technology',
+        degree: 'PhD in Optical Engineering'
+      },
+      {
+        institution: 'Northeast Forestry University',
+        degree: 'Bachelor in Materials Chemistry'
+      }
+    ],
+    researchInterests: [
+      'All-Perovskite Tandem Photovoltaics',
+      'Material Design',
+      'Interface Engineering'
+    ],
+    imageUrl: '/images/team/jianan-wang.jpg'
+  },
+  
   'dong-zhang': {
     id: 'dong-zhang',
     name: 'ZHANG Dong',
@@ -589,7 +684,7 @@ He completed his PhD in Chemistry at City University of Hong Kong and has publis
       'Department of Chemistry',
       'City University of Hong Kong'
     ],
-    biography: `Wang Ning graduated with a Bachelor's degree from Nanjing University and Master's degree from City University of Hong Kong. He has professional experience at POWERCHINA RESOURCES LIMITED in new energy and power investment.`,
+    biography: `Wang Ning graduated with a Bachelor's degree from Nanjing University and Master's degree from City University of Hong Kong. He has professional experience in new energy and power investment. His current research focuses on perovskite/silicon tandem solar cells development and the application of AI for materials science, particularly in accelerating the discovery and optimization of photovoltaic materials.`,
     education: [
       {
         institution: 'City University of Hong Kong',
@@ -606,7 +701,7 @@ He completed his PhD in Chemistry at City University of Hong Kong and has publis
     ],
     researchInterests: [
       'Materials Science',
-      'New Energy',
+      'Perovskite/Silicon Tandem Solar Cells',
       'Power Investment'
     ],
     imageUrl: '/images/team/ning-wang.jpg'
@@ -738,6 +833,107 @@ When not in the lab, you're likely to find him cooking food from around the worl
       'Materials Science'
     ],
     imageUrl: '/images/team/chang-chen.jpg'
+  },
+  
+  'tongyang-wang': {
+    id: 'tongyang-wang',
+    name: 'WANG Tongyang',
+    title: 'PhD Student',
+    email: 'wangtongyang@mail.nwpu.edu.cn',
+    googleScholar: 'https://scholar.google.com/citations?user=Tongyang Wang',
+    orcid: 'https://orcid.org/0009-0007-4571-3281',
+    affiliations: [
+      'PhD Student',
+      'Department of Chemistry',
+      'City University of Hong Kong'
+    ],
+    biography: `Tongyang Wang received her B.S. degree in Materials Science and Engineering from Northwestern Polytechnical University (NPU) in 2022 and continued at NPU for her M.S. degree, which she completed in 2025. She then joined City University of Hong Kong as a PhD student. Her research during the Master's program focused on the growth of perovskite crystals and the preparation of heterojunction devices in the field of radiation detection. She has extensive experience in perovskite crystal growth, detector fabrication, and high-energy radiation detection. She has co-authored three SCI papers and participated in two National Natural Science Foundation projects. Her current research interests lie in perovskite-based optoelectronic devices, particularly perovskite solar cells.`,
+    education: [
+      {
+        institution: 'City University of Hong Kong',
+        degree: 'PhD in Chemistry'
+      },
+      {
+        institution: 'Northwestern Polytechnical University',
+        degree: 'Master in Materials Science (Functional Materials)'
+      },
+      {
+        institution: 'Northwestern Polytechnical University',
+        degree: 'Bachelor in Materials Science and Engineering (Inorganic Non-metallic Materials)'
+      }
+    ],
+    researchInterests: [
+      'Perovskite-based Optoelectronic Devices',
+      'Perovskite Solar Cells',
+      'Perovskite Crystal Growth'
+    ],
+    imageUrl: '/images/team/tongyang-wang.jpg'
+  },
+  
+  'junjie-huang': {
+    id: 'junjie-huang',
+    name: 'HUANG Junjie',
+    title: 'PhD Student',
+    email: 'junjieh2000@hotmail.com',
+    affiliations: [
+      'PhD Student',
+      'Department of Chemistry',
+      'City University of Hong Kong'
+    ],
+    biography: `Huang Junjie was born in Chengdu, Sichuan Province, China in 2000. He received his Bachelor's degree from Wuhan University of Technology, School of Materials Science and Engineering, and his Master's degree from the University of Chinese Academy of Sciences, School of Materials Science and Optoelectronic Technology. He began his PhD studies at City University of Hong Kong in the fall of 2025. His research focuses on novel photovoltaic devices, primarily including the preparation of tin-based perovskite solar cells and organic photovoltaic devices. He has published one academic paper as the first author in an SCI journal.`,
+    education: [
+      {
+        institution: 'City University of Hong Kong',
+        degree: 'PhD in Chemistry'
+      },
+      {
+        institution: 'University of Chinese Academy of Sciences',
+        degree: 'Master in Materials Science'
+      },
+      {
+        institution: 'Wuhan University of Technology',
+        degree: 'Bachelor in New Energy Materials and Devices'
+      }
+    ],
+    researchInterests: [
+      'Tin-based Perovskite Solar Cells',
+      'Organic Photovoltaic Devices',
+      'Novel Photovoltaic Technologies'
+    ],
+    imageUrl: '/images/team/junjie-huang.jpg'
+  },
+  
+  'long-sun': {
+    id: 'long-sun',
+    name: 'SUN Long',
+    title: 'PhD Student',
+    email: 'longsun909@163.com',
+    affiliations: [
+      'PhD Student',
+      'Department of Chemistry',
+      'City University of Hong Kong'
+    ],
+    biography: `Sun Long is currently pursuing a PhD degree in the Department of Chemistry at City University of Hong Kong, focusing on organic electrochemical synthesis. During his master's studies, he concentrated on the preparation and performance of catalytic materials, surface defect construction, and characterization analysis. He has received several awards including the National Scholarship, Academic Star of the College, and Outstanding Thesis Award. His interests are diverse, including reading, art (sketching and Chinese painting), and badminton. In his leisure time, he enjoys quietly appreciating scenery.`,
+    education: [
+      {
+        institution: 'City University of Hong Kong',
+        degree: 'PhD in Chemistry'
+      },
+      {
+        institution: 'University of Science and Technology Beijing',
+        degree: 'Master in Environmental Science and Engineering'
+      },
+      {
+        institution: 'Nanjing Tech University',
+        degree: 'Bachelor in Environmental Engineering'
+      }
+    ],
+    researchInterests: [
+      'Organic Electrochemical Synthesis',
+      'Catalytic Materials',
+      'Surface Defect Construction'
+    ],
+    imageUrl: '/images/team/long-sun.jpg'
   }
 }
 
@@ -783,6 +979,54 @@ export const alumni: Record<string, TeamMember> = {
     name: 'Dr. LI Zhen',
     title: 'Former PhD Student',
     currentPosition: 'ARC DECRA Research Fellow @ University of New South Wales',
+    email: '',
+    affiliations: [],
+    biography: '',
+    education: [],
+    researchInterests: [],
+    isAlumni: true
+  },
+  'yizhe-liu': {
+    id: 'yizhe-liu',
+    name: 'Prof. LIU Yizhe',
+    title: 'Former PhD Student',
+    currentPosition: 'Assistant Professor @ Beijing Institute of Petrochemical Technology',
+    email: '',
+    affiliations: [],
+    biography: '',
+    education: [],
+    researchInterests: [],
+    isAlumni: true
+  },
+  'shoufeng-zhang': {
+    id: 'shoufeng-zhang',
+    name: 'Prof. ZHANG Shoufeng',
+    title: 'Former Postdoctoral Fellow',
+    currentPosition: 'Professor @ Guangxi University of Science and Technology',
+    email: '',
+    affiliations: [],
+    biography: '',
+    education: [],
+    researchInterests: [],
+    isAlumni: true
+  },
+  'jing-wang': {
+    id: 'jing-wang',
+    name: 'Prof. WANG Jing',
+    title: 'Former PhD Student',
+    currentPosition: 'Associate Professor @ Guangdong University of Technology',
+    email: '',
+    affiliations: [],
+    biography: '',
+    education: [],
+    researchInterests: [],
+    isAlumni: true
+  },
+  'qidi-sun': {
+    id: 'qidi-sun',
+    name: 'Dr. SUN Qidi',
+    title: 'Former PhD Student',
+    currentPosition: 'Research Fellow @ Shengli Oilfield Engineering Institute, Sinopec',
     email: '',
     affiliations: [],
     biography: '',
