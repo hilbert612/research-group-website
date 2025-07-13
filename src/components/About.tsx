@@ -41,7 +41,7 @@ const About = () => {
                 <div className="flex justify-center mb-2">
                   <BookOpen className="w-6 h-6 text-blue-600" />
                 </div>
-                <div className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">100+</div>
+                <div className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">150+</div>
                 <div className="text-gray-600 text-sm">Publications</div>
               </a>
               <a 
@@ -63,7 +63,7 @@ const About = () => {
                 <div className="flex justify-center mb-2">
                   <Users className="w-6 h-6 text-blue-600" />
                 </div>
-                <div className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">20+</div>
+                <div className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">30+</div>
                 <div className="text-gray-600 text-sm">Team Members</div>
               </a>
               <a 
