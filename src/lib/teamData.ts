@@ -32,25 +32,21 @@ export const teamMembers: Record<string, TeamMember> = {
     googleScholar: 'https://scholar.google.com.ua/citations?user=_HSF3-oAAAAJ&hl=en',
     orcid: 'https://orcid.org/0000-0002-8285-9665',
     affiliations: [
-      'Chair Professor of of Chemistry and Photovoltaic Technology',
+      'Chair Professor of Chemistry and Photovoltaic Technology',
       'City University of Hong Kong',
       'Research Grants Coordinator (CSCI)'
     ],
-    biography: `Professor ZHU Zonglong is a Chair Professor of Chemistry and Photovoltaic Technology at the Department of Chemistry, City University of Hong Kong, and Principal Investigator of the Materials Research Lab.
+    biography: `Prof. Zonglong Zhu serves as the Chair Professor of Chemistry and Photovoltaic Technology in the Department of Chemistry at the City University of Hong Kong. He earned his Ph.D. in Chemistry from the Hong Kong University of Science and Technology, following a Bachelor of Science degree from Nanjing University in 2010. After completing his Ph.D., Prof. Zhu pursued postdoctoral research at the University of Washington, Seattle.Prof. Zhu has published over 150 SCI-indexed publications, which have collectively garnered more than 18,000 citations. His portfolio includes 110 articles in prestigious, top-tier journals, with impactful contributions to the journal Science in 2022, 2023, and 2024. He has authored more than 75 publications as the corresponding author and has 29 Highly Cited Papers. Prof. Zhu was also named a Clarivate Highly Cited Researcher (Cross-Field) for three consecutive years (2022-2024). Additionally, he has been ranked among Stanford University's top 2% of highly cited scientists worldwide from 2021 to 2024.
 
-Dr. Zhu obtained his B.S. degree (Chemistry) in 2010 from Nanjing University (China). In 2015, he earned his Ph.D. degree from Hong Kong University of Science and Technology (HKUST). Then he moved to the department of materials science and engineering in University of Washington, Seattle and worked as a postdoctoral fellow during 2015-2017. He moved back to HKUST as visiting scholar in 2017. Dr. Zhu joined the City University of Hong Kong as an Assistant Professor in June 2018 and has since been promoted to Chair Professor.
-
-His research mainly focuses on the design of inorganic/organic materials, as well as connecting the materials synthesis, physical properties and device performance for optoelectronics application. The current application interests include solar cells, transistors, light-emitting diodes, and electrochemical devices (e.g. batteries, supercapacitors).
-
-Dr. Zhu has published extensively in top-tier journals including Science, Nature Energy, Nature Nanotechnology, Nature Communications, and Advanced Materials. His work has significantly contributed to the advancement of perovskite solar cells and organic photovoltaic devices, with particular focus on interface engineering and materials innovation for renewable energy applications.`,
+Prof. Zhu has been awarded including the RGC Research Fellow Award and the NSFC Excellent Young Scientists Fund (Hong Kong and Macau). He has received over HK$45 million in competitive research grants, with more than HK$30 million as a Principal Investigator (PI) or Project Coordinator (PC). These grants led by him include funding from prestigious programs such as the Collaborative Research Fund, Research Impact Fund, NSFC-RGC Joint Fund, Innovation and Technology Support Programme (ITSP) seed and platform, Mainland-Hong Kong Technology Cooperation Funding Scheme (MHKTCFS) funded by Mainland and Hong Kong, Guangdong and Hong Kong, Shenzhen and Hong Kong, Shenzhen-Hong Kong-Macau Technology Research Programme (Type C), Shenzhen Key Research Project in Natural Sciences Basic Research.`,
     education: [
       {
         institution: 'Hong Kong University of Science and Technology (HKUST)',
-        degree: 'PhD'
+        degree: 'PhD in Chemistry'
       },
       {
         institution: 'Nanjing University',
-        degree: 'B.S. degree (Chemistry)'
+        degree: 'B.S. degree in Chemistry'
       }
     ],
     researchInterests: [

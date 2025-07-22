@@ -11,7 +11,7 @@ const Team = () => {
       "City University of Hong Kong", 
       "Research Grants Coordinator (CSCI)",
     ],
-    description: "Professor ZHU Zonglong is a Chair Professor of Chemistry and Photovoltaic Technology at the Department of Chemistry, City University of Hong Kong, and Principal Investigator of the Intelligent Chemistry and Advanced Materials for Renewable Energy. His research addresses challenges at the intersection of materials innovation and renewable energy applications.",
+    description: "Prof. Zonglong Zhu is Chair Professor of Chemistry and Photovoltaic Technology at City University of Hong Kong. He holds a Ph.D. from HKUST and Bachelor's from Nanjing University, with postdoctoral experience at University of Washington. Prof. Zhu has published over 150 SCI-indexed publications, which have collectively garnered more than 18,000 citations. His portfolio includes 110 articles in prestigious, top-tier journals, with impactful contributions to the journal Science in 2022, 2023, and 2024. He is a Clarivate Highly Cited Researcher (2022-2024) and ranked among Stanford's top 2% scientists worldwide (2021-2024). He has secured over HK$45 million in competitive research grants, with HK$30+ million as Principal Investigator, from prestigious funding programs including RGC, NSFC, and various cross-border collaboration schemes.",
     imageUrl: "/images/team/zonglong-zhu.jpg",
     email: "zonglzhu@cityu.edu.hk"
   }

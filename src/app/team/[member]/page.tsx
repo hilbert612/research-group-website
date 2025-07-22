@@ -74,7 +74,7 @@ export default function MemberPage({ params }: MemberPageProps) {
             <img 
               src={member.imageUrl} 
               alt={member.name}
-              className="w-48 h-48 bg-gray-200 rounded-lg object-cover"
+              className="w-48 h-56 bg-gray-200 rounded-lg object-cover"
             />
           </div>
           
