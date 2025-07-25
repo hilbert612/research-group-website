@@ -831,41 +831,6 @@ When not in the lab, you're likely to find him cooking food from around the worl
     imageUrl: '/images/team/chang-chen.jpg'
   },
   
-  'tongyang-wang': {
-    id: 'tongyang-wang',
-    name: 'WANG Tongyang',
-    title: 'PhD Student',
-    email: 'wangtongyang@mail.nwpu.edu.cn',
-    googleScholar: 'https://scholar.google.com/citations?user=Tongyang Wang',
-    orcid: 'https://orcid.org/0009-0007-4571-3281',
-    affiliations: [
-      'PhD Student',
-      'Department of Chemistry',
-      'City University of Hong Kong'
-    ],
-    biography: `Tongyang Wang received her B.S. degree in Materials Science and Engineering from Northwestern Polytechnical University (NPU) in 2022 and continued at NPU for her M.S. degree, which she completed in 2025. She then joined City University of Hong Kong as a PhD student. Her research during the Master's program focused on the growth of perovskite crystals and the preparation of heterojunction devices in the field of radiation detection. She has extensive experience in perovskite crystal growth, detector fabrication, and high-energy radiation detection. She has co-authored three SCI papers and participated in two National Natural Science Foundation projects. Her current research interests lie in perovskite-based optoelectronic devices, particularly perovskite solar cells.`,
-    education: [
-      {
-        institution: 'City University of Hong Kong',
-        degree: 'PhD in Chemistry'
-      },
-      {
-        institution: 'Northwestern Polytechnical University',
-        degree: 'Master in Materials Science (Functional Materials)'
-      },
-      {
-        institution: 'Northwestern Polytechnical University',
-        degree: 'Bachelor in Materials Science and Engineering (Inorganic Non-metallic Materials)'
-      }
-    ],
-    researchInterests: [
-      'Perovskite-based Optoelectronic Devices',
-      'Perovskite Solar Cells',
-      'Perovskite Crystal Growth'
-    ],
-    imageUrl: '/images/team/tongyang-wang.jpg'
-  },
-  
   'junjie-huang': {
     id: 'junjie-huang',
     name: 'HUANG Junjie',
