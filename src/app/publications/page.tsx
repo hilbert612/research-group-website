@@ -4,8 +4,8 @@ import Footer from '@/components/Footer'
 import PublicationsDetail from '@/components/PublicationsDetail'
 
 export const metadata = {
-  title: 'All Publications | ICARE Lab',
-  description: 'Research publications from the Intelligent Chemistry and Advanced Materials for Renewable Energy Laboratory',
+  title: 'All Publications | CARE Lab',
+  description: 'Research publications from the Chemistry and Artificial Intelligence for Renewable Energy Lab',
 }
 
 export default function PublicationsPage() {

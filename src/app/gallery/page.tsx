@@ -4,8 +4,8 @@ import Footer from '@/components/Footer'
 import GalleryDetail from '@/components/GalleryDetail'
 
 export const metadata = {
-  title: 'Gallery | ICARE Lab',
-  description: 'Photo gallery of the Intelligent Chemistry and Advanced Materials for Renewable Energy Laboratory',
+  title: 'Gallery | CARE Lab',
+  description: 'Photo gallery of the Chemistry and Artificial Intelligence for Renewable Energy Lab',
 }
 
 export default function GalleryPage() {

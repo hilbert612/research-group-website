@@ -4,8 +4,8 @@ import Footer from '@/components/Footer'
 import NewsDetail from '@/components/NewsDetail'
 
 export const metadata = {
-  title: 'News | ICARE Lab',
-  description: 'Latest news and updates from the Intelligent Chemistry and Advanced Materials for Renewable Energy Laboratory',
+  title: 'News | CARE Lab',
+  description: 'Latest news and updates from the Chemistry and Artificial Intelligence for Renewable Energy Lab',
 }
 
 export default function NewsPage() {

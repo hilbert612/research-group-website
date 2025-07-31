@@ -61,9 +61,9 @@ const Header = () => {
           <div className="flex-shrink-0">
             <Link href="/" className="block">
               <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
-                ICARE Lab
+                CARE Lab
               </h1>
-              <p className="text-xs text-gray-500 -mt-1">Intelligent Chemistry and Advanced Materials for Renewable Energy</p>
+              <p className="text-xs text-gray-500 -mt-1">Chemistry and Artificial Intelligence for Renewable Energy Lab</p>
             </Link>
           </div>
 

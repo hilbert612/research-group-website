@@ -4,12 +4,12 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="col-span-2">
-            <h3 className="text-2xl font-bold mb-4">ICARE Lab</h3>
+            <h3 className="text-2xl font-bold mb-4">CARE Lab</h3>
             <p className="text-gray-300 mb-4">
-              Intelligent Chemistry and Advanced Materials for Renewable Energy Laboratory - Pioneering the future of sustainable energy technologies
+              Chemistry and Artificial Intelligence for Renewable Energy Lab - Pioneering the future of sustainable energy technologies
             </p>
             <p className="text-gray-400 text-sm">
-              © 2024 ICARE Lab. All rights reserved.
+              © 2024 CARE Lab. All rights reserved.
             </p>
           </div>
 

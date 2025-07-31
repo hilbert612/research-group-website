@@ -6,7 +6,7 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="space-y-8">
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900">
-            Intelligent Chemistry and Advanced Materials
+            Chemistry and Artificial Intelligence
             <span className="block text-transparent bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text">
               for Renewable Energy
             </span>
@@ -38,7 +38,7 @@ const Hero = () => {
           
           <div className="mt-16">
             <a href="#about" className="inline-flex items-center text-gray-500 hover:text-green-600 transition-colors duration-200">
-              <span className="mr-2">Discover ICARE Lab</span>
+              <span className="mr-2">Discover CARE Lab</span>
               <ArrowDown size={20} className="animate-bounce" />
             </a>
           </div>
