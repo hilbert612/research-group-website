@@ -443,6 +443,34 @@ He completed his PhD in Chemistry at City University of Hong Kong and has publis
     imageUrl: '/images/team/jianan-wang.jpg'
   },
   
+  'zihao-song': {
+    id: 'zihao-song',
+    name: 'Dr. SONG Zihao',
+    title: 'Postdoctoral Fellow',
+    email: 'williamsong666@outlook.com',
+    affiliations: [
+      'Postdoctoral Fellow',
+      'Department of Chemistry',
+      'City University of Hong Kong'
+    ],
+    biography: `Dr. Song Zihao's research mainly focus on radiation detectors. He has 5 years of experiences in studying perovskite X-ray imager. He has skills in materials design, device preparation and programming. He is currently exploring new types of detectors Professor Zhu's group. Designing detection materials and electronics for different types of radiation will be his major research content.`,
+    education: [
+      {
+        institution: 'Huazhong University of Science and Technology',
+        degree: 'PhD'
+      },
+      {
+        institution: 'Jilin University',
+        degree: 'Bachelor of Science'
+      }
+    ],
+    researchInterests: [
+      'Radiation Detectors',
+      'Perovskite X-ray Imagers'
+    ],
+    imageUrl: '/images/team/zihao-song.jpg'
+  },
+  
   'dong-zhang': {
     id: 'dong-zhang',
     name: 'ZHANG Dong',
