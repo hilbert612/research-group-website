@@ -69,35 +69,11 @@ const Team = () => {
         {/* Postdoctoral Fellows Section */}
         <div className="mb-16">
           <h2 className="text-2xl font-bold text-gray-900 mb-8">Postdoctoral Fellow</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
             {postdocs.map((member, index) => (
-              <div key={index} className="group">
-                <div className="flex items-start space-x-3">
-                  <div className="flex-shrink-0">
-                    {member.imageUrl && !member.imageUrl.includes('placeholder') ? (
-                      <img
-                        src={member.imageUrl}
-                        alt={member.name}
-                        className="w-24 h-28 bg-gray-200 rounded-lg object-cover"
-                      />
-                    ) : (
-                      <div className="w-24 h-28 bg-gray-200 rounded-lg flex items-center justify-center">
-                        <span className="text-gray-500 text-xs">Photo</span>
-                      </div>
-                    )}
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    {member.id ? (
-                      <Link href={`/team/${member.id}`} className="hover:text-primary-600 transition-colors">
-                        <h4 className="text-base font-semibold text-gray-900 mb-1 hover:text-primary-600 transition-colors">{member.name}</h4>
-                      </Link>
-                    ) : (
-                      <h4 className="text-base font-semibold text-gray-900 mb-1">{member.name}</h4>
-                    )}
-                    <p className="text-primary-600 text-sm font-medium mb-2">{member.title}</p>
-                    <p className="text-gray-600 text-xs leading-relaxed">{member.researchInterests?.join(', ')}</p>
-                  </div>
-                </div>
+              <div key={index} className="p-4 border border-gray-100 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <h4 className="text-base font-semibold text-gray-900 mb-1">{member.name}</h4>
+                <p className="text-primary-600 text-sm font-medium mb-1">{member.title}</p>
               </div>
             ))}
           </div>
@@ -106,35 +82,11 @@ const Team = () => {
         {/* PhD Students Section */}
         <div className="mb-16">
           <h2 className="text-2xl font-bold text-gray-900 mb-8">PhD Student</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
             {phdStudents.map((member, index) => (
-              <div key={index} className="group">
-                <div className="flex items-start space-x-3">
-                  <div className="flex-shrink-0">
-                    {member.imageUrl && !member.imageUrl.includes('placeholder') ? (
-                      <img
-                        src={member.imageUrl}
-                        alt={member.name}
-                        className="w-24 h-28 bg-gray-200 rounded-lg object-cover"
-                      />
-                    ) : (
-                      <div className="w-24 h-28 bg-gray-200 rounded-lg flex items-center justify-center">
-                        <span className="text-gray-500 text-xs">Photo</span>
-                      </div>
-                    )}
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    {member.id ? (
-                      <Link href={`/team/${member.id}`} className="hover:text-primary-600 transition-colors">
-                        <h4 className="text-base font-semibold text-gray-900 mb-1 hover:text-primary-600 transition-colors">{member.name}</h4>
-                      </Link>
-                    ) : (
-                      <h4 className="text-base font-semibold text-gray-900 mb-1">{member.name}</h4>
-                    )}
-                    <p className="text-primary-600 text-sm font-medium mb-2">{member.title}</p>
-                    <p className="text-gray-600 text-xs leading-relaxed">{member.researchInterests?.join(', ')}</p>
-                  </div>
-                </div>
+              <div key={index} className="p-4 border border-gray-100 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                <h4 className="text-base font-semibold text-gray-900 mb-1">{member.name}</h4>
+                <p className="text-primary-600 text-sm font-medium mb-1">{member.title}</p>
               </div>
             ))}
           </div>
