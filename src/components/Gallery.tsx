@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 
 const Gallery = () => {
-  // 只选择4张预览图片
+  // 只选择3张预览图片
   const previewImages = [
     {
       src: '/images/news/zhangchunlei.jpg',
@@ -17,10 +17,6 @@ const Gallery = () => {
     {
       src: '/images/news/nicolong.jpg',
       alt: 'Workshop with Professor Nicholas Long',
-    },
-    {
-      src: '/images/news/geneva50.jpg',
-      alt: 'Gold Medal at the 50th International Exhibition of Inventions Geneva',
     }
   ]
 
@@ -46,7 +42,7 @@ const Gallery = () => {
         </div>
 
         {/* 图片预览网格 */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {previewImages.map((image, index) => (
             <Link 
               key={index} 

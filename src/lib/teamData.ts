@@ -183,36 +183,7 @@ He completed his PhD in Chemistry at City University of Hong Kong and has publis
     imageUrl: '/images/team/jie-gong.jpg'
   },
   
-  'meng-liao': {
-    id: 'meng-liao',
-    name: 'Dr. LIAO Meng',
-    title: 'Postdoctoral Fellow',
-    email: 'mengliao@cityu.edu.hk',
-    googleScholar: 'https://scholar.google.com/citations?hl=en&user=h-Z_zg4AAAAJ',
-    affiliations: [
-      'Research Fellow',
-      'Department of Chemistry',
-      'City University of Hong Kong'
-    ],
-    biography: `Dr. Liao Meng's research centers on the development of flexible and scalable polymer-based technologies for energy storage and conversion, with a particular emphasis on addressing the challenge of combining high electrochemical performance with mechanical adaptability. These efforts are especially relevant for emerging applications such as wearable electronics and intelligent textiles. By utilizing the structural versatility, low-cost processing, and environmental benefits of polymers, he works on constructing integrated and flexible battery systems—from the molecular design of active materials to interface engineering at the mesoscale and device-level fabrication.`,
-    education: [
-      {
-        institution: 'Fudan University',
-        degree: 'PhD in Polymer Chemistry and Physics'
-      },
-      {
-        institution: 'Sichuan University',
-        degree: 'Bachelor in Polymer Materials and Engineering'
-      }
-    ],
-    researchInterests: [
-      'Flexible Energy Storage',
-      'Polymer-based Technologies',
-      'Wearable Electronics'
-      
-    ],
-    imageUrl: '/images/team/meng-liao.jpg'
-  },
+
   
   'lei-yang': {
     id: 'lei-yang',
@@ -939,35 +910,23 @@ export const alumni: Record<string, TeamMember> = {
     researchInterests: [],
     isAlumni: true
   },
-  'dan-zhao': {
-    id: 'dan-zhao',
-    name: 'Prof. ZHAO Dan',
-    title: 'Former Postdoctoral Fellow',
-    currentPosition: 'Associate Professor @ University of Electronic Science and Technology of China',
-    email: '',
-    affiliations: [],
-    biography: '',
-    education: [],
-    researchInterests: [],
-    isAlumni: true
-  },
-  'xianglang-sun': {
-    id: 'xianglang-sun',
-    name: 'Prof. SUN Xianglang',
-    title: 'Former Postdoctoral Fellow',
-    currentPosition: 'Associate Professor @ Huazhong University of Science and Technology',
-    email: '',
-    affiliations: [],
-    biography: '',
-    education: [],
-    researchInterests: [],
-    isAlumni: true
-  },
   'zhen-li': {
     id: 'zhen-li',
     name: 'Dr. LI Zhen',
     title: 'Former PhD Student',
     currentPosition: 'ARC DECRA Research Fellow @ University of New South Wales',
+    email: '',
+    affiliations: [],
+    biography: '',
+    education: [],
+    researchInterests: [],
+    isAlumni: true
+  },
+  'meng-liao': {
+    id: 'meng-liao',
+    name: 'Prof. LIAO Meng',
+    title: 'Former Postdoctoral Fellow',
+    currentPosition: 'Tenure-Track Associate Professor @ Fudan University',
     email: '',
     affiliations: [],
     biography: '',
@@ -987,11 +946,23 @@ export const alumni: Record<string, TeamMember> = {
     researchInterests: [],
     isAlumni: true
   },
-  'shoufeng-zhang': {
-    id: 'shoufeng-zhang',
-    name: 'Prof. ZHANG Shoufeng',
+  'qidi-sun': {
+    id: 'qidi-sun',
+    name: 'Dr. SUN Qidi',
+    title: 'Former PhD Student',
+    currentPosition: 'Research Fellow @ Shengli Oilfield Engineering Institute, Sinopec',
+    email: '',
+    affiliations: [],
+    biography: '',
+    education: [],
+    researchInterests: [],
+    isAlumni: true
+  },
+  'xianglang-sun': {
+    id: 'xianglang-sun',
+    name: 'Prof. SUN Xianglang',
     title: 'Former Postdoctoral Fellow',
-    currentPosition: 'Professor @ Guangxi University of Science and Technology',
+    currentPosition: 'Associate Professor @ Huazhong University of Science and Technology',
     email: '',
     affiliations: [],
     biography: '',
@@ -1011,11 +982,23 @@ export const alumni: Record<string, TeamMember> = {
     researchInterests: [],
     isAlumni: true
   },
-  'qidi-sun': {
-    id: 'qidi-sun',
-    name: 'Dr. SUN Qidi',
-    title: 'Former PhD Student',
-    currentPosition: 'Research Fellow @ Shengli Oilfield Engineering Institute, Sinopec',
+  'shoufeng-zhang': {
+    id: 'shoufeng-zhang',
+    name: 'Prof. ZHANG Shoufeng',
+    title: 'Former Postdoctoral Fellow',
+    currentPosition: 'Professor @ Guangxi University of Science and Technology',
+    email: '',
+    affiliations: [],
+    biography: '',
+    education: [],
+    researchInterests: [],
+    isAlumni: true
+  },
+  'dan-zhao': {
+    id: 'dan-zhao',
+    name: 'Prof. ZHAO Dan',
+    title: 'Former Postdoctoral Fellow',
+    currentPosition: 'Associate Professor @ University of Electronic Science and Technology of China',
     email: '',
     affiliations: [],
     biography: '',

@@ -8,6 +8,11 @@ const GalleryDetail = () => {
 
   const galleryImages = [
     {
+      src: '/images/news/wangyan.png',
+      alt: 'Congratulations to Dr. LIAO Meng on his promotion and WANG Yan on his Ph.D.',
+      caption: 'Congratulations to Dr. LIAO Meng on his promotion and WANG Yan on his Ph.D.'
+    },
+    {
       src: '/images/news/zhangchunlei.jpg',
       alt: 'Congratulations to Dr. Sun Xianglang on his promotion and Zhang Chunlei on his Ph.D.',
       caption: 'Congratulations to Dr. Sun Xianglang on his promotion and Zhang Chunlei on his Ph.D.'
