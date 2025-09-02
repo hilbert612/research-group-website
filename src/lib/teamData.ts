@@ -894,6 +894,35 @@ When not in the lab, you're likely to find him cooking food from around the worl
       'Surface Defect Construction'
     ],
     imageUrl: '/images/team/long-sun.jpg'
+  },
+  
+  'bohong-chang': {
+    id: 'bohong-chang',
+    name: 'Dr. CHANG Bohong',
+    title: 'Postdoctoral Fellow',
+    email: 'bohong.chang@cityu.edu.hk',
+    affiliations: [
+      'Postdoctoral Fellow',
+      'Department of Chemistry',
+      'City University of Hong Kong'
+    ],
+    biography: `Dr. Chang Bohong is a Postdoctoral Fellow in the Department of Chemistry at City University of Hong Kong. His research focuses on advanced materials for energy applications, particularly in the development of novel photovoltaic technologies.`,
+    education: [
+      {
+        institution: 'Peking University',
+        degree: 'PhD in Materials Science'
+      },
+      {
+        institution: 'Tsinghua University',
+        degree: 'Bachelor in Chemistry'
+      }
+    ],
+    researchInterests: [
+      'Advanced Materials',
+      'Photovoltaic Technologies',
+      'Energy Storage'
+    ],
+    imageUrl: '/images/team/bohong-chang.jpg'
   }
 }
 
@@ -950,7 +979,7 @@ export const alumni: Record<string, TeamMember> = {
     id: 'qidi-sun',
     name: 'Dr. SUN Qidi',
     title: 'Former PhD Student',
-    currentPosition: 'Research Fellow @ Shengli Oilfield Engineering Institute, Sinopec',
+    currentPosition: 'Researcher @ Shengli Oilfield Engineering Institute, Sinopec',
     email: '',
     affiliations: [],
     biography: '',
