@@ -15,6 +15,7 @@ interface Publication {
   type: 'article' | 'inproceedings' | 'book' | 'phdthesis' | 'mastersthesis' | 'misc';
   selected?: boolean;
   weight?: number;
+  note?: string;
 }
 
 interface BibEntry {
@@ -87,7 +88,8 @@ export class BibTexParser {
       booktitle: entry.booktitle,
       type: this.normalizeType(type),
       selected: entry.selected === 'true' || entry.selected === 'yes',
-      weight: entry.weight ? parseInt(entry.weight) : undefined
+      weight: entry.weight ? parseInt(entry.weight) : undefined,
+      note: entry.note
     };
   }
   

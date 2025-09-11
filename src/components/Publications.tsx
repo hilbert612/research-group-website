@@ -14,19 +14,13 @@ const Publications = () => {
     sortOrder: 'desc',
   });
 
-  // 只获取精选论文
+  // 只获取Science期刊论文
   const selectedPublications = publications
-    .filter(pub => pub.selected)
-    .sort((a, b) => {
-      // 按weight排序，没有weight的排在后面
-      const weightA = a.weight ?? 999;
-      const weightB = b.weight ?? 999;
-      if (weightA !== weightB) {
-        return weightA - weightB;
-      }
-      // 如果weight相同，按年份降序排序
-      return b.year - a.year;
+    .filter(pub => {
+      const journalName = (pub.journal || '').toLowerCase();
+      return journalName.includes('science');
     })
+    .sort((a, b) => b.year - a.year)
     .slice(0, 5); // 只显示前5篇
 
   const typeLabels: { [key: string]: string } = {
@@ -80,7 +74,7 @@ const Publications = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-end mb-12">
           <div>
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
+             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
               Selected Publications
             </h2>
             <p className="text-gray-600">

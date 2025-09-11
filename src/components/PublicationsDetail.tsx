@@ -15,20 +15,159 @@ const PublicationsDetail = () => {
     sortOrder: 'desc',
   });
 
-  // 分离精选论文和所有论文
-  const selectedPublications = publications
-    .filter(pub => pub.selected)
-    .sort((a, b) => {
-      // 按weight排序，没有weight的排在后面
-      const weightA = a.weight ?? 999;
-      const weightB = b.weight ?? 999;
-      if (weightA !== weightB) {
-        return weightA - weightB;
-      }
-      // 如果weight相同，按年份降序排序
-      return b.year - a.year;
-    });
-  const allPublications = publications;
+  // 分离Science期刊和其他精选论文
+  const sciencePublications = publications
+    .filter(pub => {
+      const journalName = (pub.journal || '').toLowerCase();
+      return journalName.includes('science');
+    })
+    .sort((a, b) => b.year - a.year);
+    
+  // 手动添加Nature系列期刊文章，按照时间排序（最新的在前）
+  const selectedPublications = [
+    {
+      title: "Graphene oxide doping boosts efficiency of low-temperature processed perovskite solar cells with carbon electrode towards 24%",
+      authors: ["Yudi Wang", "Wenrui Li", "Xin Wu", "Guanghao Meng", "Qiuyu Liu", "Wenpei Zhao", "Bo Li", "Francesco Vanin", "Hongjiang Li", "Yanying Shi", "Shuhong Wang", "Ziyang Tian", "Linghui Zhang", "Jie Zhang", "Zonglong Zhu", "Yantao Shi"],
+      journal: "Nature Energy",
+      year: 2025,
+      type: "article" as const,
+      note: "In press",
+      tags: ["Solar cells", "Perovskite"],
+      url: "",
+      booktitle: "",
+      publisher: ""
+    },
+    {
+      title: "Nanoscale Soft Interaction-Engineered Perovskite Heterojunctions for Highly Efficient and Reproducible Solar Cells",
+      authors: ["Bo Li", "Danpeng Gao", "Francesco Vanin", "Chunlei Zhang", "Zexin Yu", "Ning Wang", "Jie Gong", "Shuai Li", "Jianqiu Gong", "Liangchen Qian", "Yen-Hung Lin", "Martin Stolterfoht", "Nicholas J. Long", "Zonglong Zhu"],
+      journal: "Nature Communication",
+      year: 2025,
+      type: "article" as const,
+      note: "In press",
+      tags: ["Solar cells", "Perovskite"],
+      url: "",
+      booktitle: "",
+      publisher: ""
+    },
+    {
+      title: "Highly efficient all-perovskite photovoltaic-powered battery with dual-function viologen for portable electronics",
+      authors: ["Jie Gong", "Danpeng Gao", "Hang Zhang", "Xiongyi Liang", "Bo Li", "Qi Liu", "Liangchen Qian", "Xintong Li", "Xin Wu", "Chunlei Zhang", "Zexin Yu", "Francesco Vanin", "Xiao Cheng Zeng", "Nan Li", "Jijian Xu", "Chunyi Zhi", "Zonglong Zhu"],
+      journal: "Nature Communications",
+      year: 2025,
+      volume: "16",
+      number: "1",
+      pages: "7980",
+      doi: "10.1038/s41467-025-63272-x",
+      type: "article" as const,
+      tags: ["Batteries", "Solar cells"],
+      url: "https://www.nature.com/articles/s41467-025-63272-x",
+      booktitle: "",
+      publisher: ""
+    },
+    {
+      title: "High-efficiency perovskite solar cells enabled by suppressing intermolecular aggregation in hole-selective contacts",
+      authors: ["Danpeng Gao", "Bo Li", "Xianglang Sun", "Qi Liu", "Chunlei Zhang", "Liangchen Qian", "Zexin Yu", "Xintong Li", "Xin Wu", "Baoze Liu", "Ning Wang", "Francesco Vanin", "Xinxin Xia", "Jie Gong", "Nan Li", "Xiao Cheng Zeng", "Zhong'an Li", "Zonglong Zhu"],
+      journal: "Nature Photonics",
+      year: 2025,
+      doi: "10.1038/s41566-025-01725-x",
+      pages: "1-8",
+      type: "article" as const,
+      tags: ["Solar cells"],
+      url: "https://www.nature.com/articles/s41566-025-01725-x",
+      booktitle: "",
+      publisher: ""
+    },
+    {
+      title: "Harnessing strong aromatic conjugation in low-dimensional perovskite heterojunctions for high-performance photovoltaic devices",
+      authors: ["Bo Li", "Qi Liu", "Jianqiu Gong", "Shuai Li", "Chunlei Zhang", "Danpeng Gao", "Zhongwei Chen", "Zhen Li", "Xin Wu", "Dan Zhao", "Zexin Yu", "Xintong Li", "Yan Wang", "Haipeng Lu", "Xiao Cheng Zeng", "Zonglong Zhu"],
+      journal: "Nature Communications",
+      year: 2024,
+      volume: "15",
+      number: "1",
+      pages: "2753",
+      doi: "10.1038/s41467-024-47112-y",
+      type: "article" as const,
+      tags: ["Solar cells"],
+      url: "https://www.nature.com/articles/s41467-024-47112-y",
+      booktitle: "",
+      publisher: ""
+    },
+    {
+      title: "Co-deposition of hole-selective contact and absorber for improving the processability of perovskite solar cells",
+      authors: ["Xiaopeng Zheng", "Zhen Li", "Yi Zhang", "Min Chen", "Tuo Liu", "Chuanxiao Xiao", "Danpeng Gao", "Jay B. Patel", "Darius Kuciauskas", "Artiom Magomedov", "Rebecca A. Scheidt", "Xiaoming Wang", "Steven P. Harvey", "Zhenghong Dai", "Chunlei Zhang", "Daniel Morales", "Henry Pruett", "Brian M. Wieliczka", "Ahmad R. Kirmani", "Nitin P. Padture", "Kenneth R. Graham", "Yanfa Yan", "Mohammad Khaja Nazeeruddin", "Michael D. McGehee", "Zonglong Zhu", "Joseph M. Luther"],
+      journal: "Nature Energy",
+      year: 2023,
+      volume: "8",
+      number: "5",
+      pages: "462-472",
+      doi: "10.1038/s41560-023-01227-6",
+      type: "article" as const,
+      tags: ["Materials for energy and catalysis", "Solar cells"],
+      url: "https://www.nature.com/articles/s41560-023-01227-6",
+      booktitle: "",
+      publisher: ""
+    },
+    {
+      title: "Improved photovoltaic performance and robustness of all-polymer solar cells enabled by a polyfullerene guest acceptor",
+      authors: ["Han Yu", "Yan Wang", "Xinhui Zou", "Junli Yin", "Xiaoyu Shi", "Yuhao Li", "Heng Zhao", "Lingyuan Wang", "Ho Ming Ng", "Bosen Zou", "Xinhui Lu", "Kam Sing Wong", "Wei Ma", "Zonglong Zhu", "He Yan", "Shangshang Chen"],
+      journal: "Nature Communications",
+      year: 2023,
+      volume: "14",
+      number: "1",
+      pages: "2323",
+      doi: "10.1038/s41467-023-37738-9",
+      type: "article" as const,
+      tags: ["Conjugated polymers", "Devices for energy harvesting", "Electronic devices", "Solar cells"],
+      url: "https://www.nature.com/articles/s41467-023-37738-9",
+      booktitle: "",
+      publisher: ""
+    },
+    {
+      title: "Pseudo-bilayer architecture enables high-performance organic solar cells with enhanced exciton diffusion length",
+      authors: ["Kui Jiang", "Jie Zhang", "Zhengxing Peng", "Francis Lin", "Shengfan Wu", "Zhen Li", "Yuzhong Chen", "He Yan", "Harald Ade", "Zonglong Zhu", "Alex K.-Y. Jen"],
+      journal: "Nature Communications",
+      year: 2021,
+      volume: "12",
+      number: "1",
+      pages: "468",
+      doi: "10.1038/s41467-020-20791-z",
+      type: "article" as const,
+      tags: ["Solar cells"],
+      url: "https://www.nature.com/articles/s41467-020-20791-z",
+      booktitle: "",
+      publisher: ""
+    },
+    {
+      title: "2D metal–organic framework for stable perovskite solar cells with minimized lead leakage",
+      authors: ["Shengfan Wu", "Zhen Li", "Mu-Qing Li", "Yingxue Diao", "Francis Lin", "Tiantian Liu", "Jie Zhang", "Peter Tieu", "Wenpei Gao", "Feng Qi", "Xiaoqing Pan", "Zhengtao Xu", "Zonglong Zhu", "Alex K.-Y. Jen"],
+      journal: "Nature Nanotechnology",
+      year: 2020,
+      volume: "15",
+      number: "11",
+      pages: "934-940",
+      doi: "10.1038/s41565-020-0765-7",
+      type: "article" as const,
+      tags: ["Metal–organic frameworks", "Solar cells"],
+      url: "https://www.nature.com/articles/s41565-020-0765-7",
+      booktitle: "",
+      publisher: ""
+    },
+    {
+      title: "Highly efficient all-inorganic perovskite solar cells with suppressed non-radiative recombination by a Lewis base",
+      authors: ["Jing Wang", "Jie Zhang", "Yingzhi Zhou", "Hongbin Liu", "Qifan Xue", "Xiaosong Li", "Chu-Chen Chueh", "Hin-Lap Yip", "Zonglong Zhu", "Alex K. Y. Jen"],
+      journal: "Nature Communications",
+      year: 2020,
+      volume: "11",
+      number: "1",
+      pages: "177",
+      doi: "10.1038/s41467-019-13909-5",
+      type: "article" as const,
+      tags: ["Photovoltaics", "Solar cells"],
+      url: "https://www.nature.com/articles/s41467-019-13909-5",
+      booktitle: "",
+      publisher: ""
+    }
+  ];
 
   const typeLabels: { [key: string]: string } = {
     article: 'Journal Article',
@@ -97,14 +236,14 @@ const PublicationsDetail = () => {
         </a>
       </div>
 
-      {/* Selected Publications */}
-      {selectedPublications.length > 0 && (
+      {/* Science Publications */}
+      {sciencePublications.length > 0 && (
         <div className="mb-12">
           <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-6 pb-2 border-b border-gray-200">
-            Selected Publications
+            Science
           </h3>
           <div className="space-y-4">
-            {selectedPublications.map((pub, index) => (
+            {sciencePublications.map((pub, index) => (
               <div key={`selected-${index}`} className="border-b border-gray-200 pb-4 last:border-b-0 last:pb-0">
                 <div className="space-y-1">
                   {/* 标题和年份 */}
@@ -132,9 +271,16 @@ const PublicationsDetail = () => {
                   {/* 期刊名称和链接 */}
                   <div className="flex items-center justify-between mt-2">
                     <div className="flex items-center space-x-3">
+                      <div className="flex items-center">
                       <span className="inline-block bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium">
                         {pub.journal || pub.booktitle || pub.publisher || typeLabels[pub.type] || pub.type}
                       </span>
+                        {pub.note === "In press" && 
+                          <span className="ml-2 bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs font-bold">
+                            IN PRESS
+                          </span>
+                        }
+                      </div>
                       
                       {/* 链接 */}
                       <div className="flex space-x-3 text-sm">
@@ -148,7 +294,8 @@ const PublicationsDetail = () => {
                             DOI
                           </a>
                         )}
-                        {pub.url && !pub.doi && (
+                        {/* 已经在期刊名称旁边显示了In Press标志，这里不再重复显示 */}
+                        {pub.url && !pub.doi && !pub.note && (
                           <a 
                             href={pub.url}
                             target="_blank" 
@@ -168,13 +315,13 @@ const PublicationsDetail = () => {
         </div>
       )}
 
-      {/* All Publications */}
+      {/* Nature Family */}
       <div>
         <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-6 pb-2 border-b border-gray-200">
-          All Publications
+          Nature Family
         </h3>
         <div className="space-y-4">
-          {allPublications.map((pub, index) => (
+          {selectedPublications.map((pub, index) => (
             <div key={index} className="border-b border-gray-200 pb-4 last:border-b-0 last:pb-0">
               <div className="space-y-1">
                 {/* 标题和年份 */}
@@ -202,9 +349,16 @@ const PublicationsDetail = () => {
                 {/* 期刊名称和链接 */}
                 <div className="flex items-center justify-between mt-2">
                   <div className="flex items-center space-x-3">
+                    <div className="flex items-center">
                     <span className="inline-block bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium">
                       {pub.journal || pub.booktitle || pub.publisher || typeLabels[pub.type] || pub.type}
                     </span>
+                      {pub.note === "In press" && 
+                        <span className="ml-2 bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs font-bold">
+                          IN PRESS
+                        </span>
+                      }
+                    </div>
                     
                     {/* 链接 */}
                     <div className="flex space-x-3 text-sm">
@@ -218,7 +372,8 @@ const PublicationsDetail = () => {
                           DOI
                         </a>
                       )}
-                      {pub.url && !pub.doi && (
+                      {/* 已经在期刊名称旁边显示了In Press标志，这里不再重复显示 */}
+                      {pub.url && !pub.doi && !pub.note && (
                         <a 
                           href={pub.url}
                           target="_blank" 

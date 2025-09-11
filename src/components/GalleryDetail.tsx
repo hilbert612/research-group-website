@@ -8,6 +8,11 @@ const GalleryDetail = () => {
 
   const galleryImages = [
     {
+      src: '/images/news/Teacher2025.jpg',
+      alt: 'Wishing Professor Zhu a Happy Teacher\'s Day',
+      caption: 'Wishing Professor Zhu a Happy Teacher\'s Day 2025'
+    },
+    {
       src: '/images/news/wangyan.png',
       alt: 'Congratulations to Dr. LIAO Meng on his promotion and WANG Yan on his Ph.D.',
       caption: 'Congratulations to Dr. LIAO Meng on his promotion and WANG Yan on his Ph.D.'
@@ -60,7 +65,7 @@ const GalleryDetail = () => {
   const categories = [
     { name: 'All', count: galleryImages.length },
     { name: 'Facilities', count: 2 },
-    { name: 'Team', count: 7 },
+    { name: 'Team', count: 8 },
     { name: 'Research', count: 3 }
   ]
 
@@ -70,9 +75,9 @@ const GalleryDetail = () => {
   const filteredImages = activeCategory === 'All' 
     ? galleryImages 
     : galleryImages.filter((_, index) => {
-        if (activeCategory === 'Facilities' && (index === 0 || index === 8)) return true
-        if (activeCategory === 'Team' && (index > 0 && index < 6 || index > 6)) return true
-        if (activeCategory === 'Research' && (index === 2 || index === 3 || index === 11)) return true
+        if (activeCategory === 'Facilities' && (index === 1 || index === 9)) return true
+        if (activeCategory === 'Team' && (index === 0 || (index > 1 && index < 7) || index > 7)) return true
+        if (activeCategory === 'Research' && (index === 3 || index === 4 || index === 12)) return true
         return false
       })
 
