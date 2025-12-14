@@ -6,6 +6,7 @@ import Publications from '@/components/Publications'
 import Team from '@/components/Team'
 import News from '@/components/News'
 import Gallery from '@/components/Gallery'
+import Recruitment from '@/components/Recruitment'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
 
@@ -20,6 +21,7 @@ export default function Home() {
       <Publications />
       <News />
       <Gallery />
+      <Recruitment />
       <Contact />
       <Footer />
     </main>

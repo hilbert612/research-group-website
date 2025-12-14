@@ -26,26 +26,28 @@ const PublicationsDetail = () => {
   // 手动添加Nature系列期刊文章，按照时间排序（最新的在前）
   const selectedPublications = [
     {
-      title: "Advancing Closed-Loop Sustainable Perovskite Photovoltaics",
+      title: "Closed-loop manufacturing for sustainable perovskite photovoltaics",
       authors: ["Bo Li", "Danpeng Gao", "Chunlei Zhang", "Zexin Yu", "Martin Stolterfoht", "Yen Hung Lin", "Markus Lenz", "Henry J. Snaith", "Zonglong Zhu"],
       journal: "Nature Reviews Materials",
       year: 2025,
       type: "article" as const,
-      note: "In press",
+      doi: "10.1038/s41578-025-00872-5",
+      pages: "1-16",
       tags: ["Solar cells", "Perovskite", "Sustainability"],
-      url: "",
+      url: "https://www.nature.com/articles/s41578-025-00872-5",
       booktitle: "",
       publisher: ""
     },
     {
-      title: "Graphene oxide doping boosts efficiency of low-temperature processed perovskite solar cells with carbon electrode towards 24%",
+      title: "Graphene oxide doping of the hole injection layer enables 23.6% efficiency in perovskite solar cells with carbon electrodes",
       authors: ["Yudi Wang", "Wenrui Li", "Xin Wu", "Guanghao Meng", "Qiuyu Liu", "Wenpei Zhao", "Bo Li", "Francesco Vanin", "Hongjiang Li", "Yanying Shi", "Shuhong Wang", "Ziyang Tian", "Linghui Zhang", "Jie Zhang", "Zonglong Zhu", "Yantao Shi"],
       journal: "Nature Energy",
       year: 2025,
       type: "article" as const,
-      note: "In press",
+      doi: "10.1038/s41560-025-01893-8",
+      pages: "1-11",
       tags: ["Solar cells", "Perovskite"],
-      url: "",
+      url: "https://www.nature.com/articles/s41560-025-01893-8",
       booktitle: "",
       publisher: ""
     },
