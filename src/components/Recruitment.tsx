@@ -86,7 +86,7 @@ const Recruitment = () => {
               <div className="bg-green-50 rounded-lg p-4 border border-green-200 space-y-2">
                 <p className="text-gray-700 flex items-start">
                   <CheckCircle size={18} className="mr-2 mt-0.5 text-green-600 flex-shrink-0" />
-                  <span>Salary and benefits will be <strong>competitive</strong>, determined based on the applicant's 
+                  <span>Salary and benefits will be <strong>competitive</strong>, determined based on the applicant&apos;s 
                   qualifications and experience, and administered in accordance with University regulations</span>
                 </p>
                 <p className="text-gray-700 flex items-start">
