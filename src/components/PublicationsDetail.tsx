@@ -288,16 +288,9 @@ const PublicationsDetail = () => {
                   {/* 期刊名称和链接 */}
                   <div className="flex items-center justify-between mt-2">
                     <div className="flex items-center space-x-3">
-                      <div className="flex items-center">
                       <span className="inline-block bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium">
                         {pub.journal || pub.booktitle || pub.publisher || typeLabels[pub.type] || pub.type}
                       </span>
-                        {pub.note === "In press" && 
-                          <span className="ml-2 bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs font-bold">
-                            IN PRESS
-                          </span>
-                        }
-                      </div>
                       
                       {/* 链接 */}
                       <div className="flex space-x-3 text-sm">
@@ -311,8 +304,7 @@ const PublicationsDetail = () => {
                             DOI
                           </a>
                         )}
-                        {/* 已经在期刊名称旁边显示了In Press标志，这里不再重复显示 */}
-                        {pub.url && !pub.doi && !pub.note && (
+                        {pub.url && !pub.doi && (
                           <a 
                             href={pub.url}
                             target="_blank" 
@@ -366,16 +358,9 @@ const PublicationsDetail = () => {
                 {/* 期刊名称和链接 */}
                 <div className="flex items-center justify-between mt-2">
                   <div className="flex items-center space-x-3">
-                    <div className="flex items-center">
                     <span className="inline-block bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium">
                       {pub.journal || pub.booktitle || pub.publisher || typeLabels[pub.type] || pub.type}
                     </span>
-                      {pub.note === "In press" && 
-                        <span className="ml-2 bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs font-bold">
-                          IN PRESS
-                        </span>
-                      }
-                    </div>
                     
                     {/* 链接 */}
                     <div className="flex space-x-3 text-sm">
@@ -389,8 +374,7 @@ const PublicationsDetail = () => {
                           DOI
                         </a>
                       )}
-                      {/* 已经在期刊名称旁边显示了In Press标志，这里不再重复显示 */}
-                      {pub.url && !pub.doi && !pub.note && (
+                      {pub.url && !pub.doi && (
                         <a 
                           href={pub.url}
                           target="_blank" 
