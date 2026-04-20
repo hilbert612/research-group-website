@@ -15,11 +15,11 @@ const PublicationsDetail = () => {
     sortOrder: 'desc',
   });
 
-  // 分离Science期刊和其他精选论文
+  // 分离Science和Nature主刊论文（不包含子刊）
   const sciencePublications = publications
     .filter(pub => {
-      const journalName = (pub.journal || '').toLowerCase();
-      return journalName.includes('science');
+      const journalName = (pub.journal || '').toLowerCase().trim();
+      return journalName === 'science' || journalName === 'nature';
     })
     .sort((a, b) => b.year - a.year);
     
@@ -257,7 +257,7 @@ const PublicationsDetail = () => {
       {sciencePublications.length > 0 && (
         <div className="mb-12">
           <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-6 pb-2 border-b border-gray-200">
-            Science
+            Science & Nature
           </h3>
           <div className="space-y-4">
             {sciencePublications.map((pub, index) => (
