@@ -923,6 +923,44 @@ When not in the lab, you're likely to find him cooking food from around the worl
       'Energy Storage'
     ],
     imageUrl: '/images/team/bohong-chang.jpg'
+  },
+
+  'jiaxin-chen': {
+    id: 'jiaxin-chen',
+    name: 'Dr. CHEN Jiaxin',
+    title: 'Postdoctoral Fellow',
+    email: '',
+    affiliations: [
+      'Postdoctoral Fellow',
+      'Department of Chemistry',
+      'City University of Hong Kong'
+    ],
+    biography: `Dr. Chen Jiaxin is a Postdoctoral Fellow in the Department of Chemistry at City University of Hong Kong.`,
+    education: [],
+    researchInterests: [
+      'Materials Science',
+      'Renewable Energy'
+    ],
+    imageUrl: '/images/team/jiaxin-chen.jpg'
+  },
+
+  'yutong-wu': {
+    id: 'yutong-wu',
+    name: 'Dr. WU Yutong',
+    title: 'Postdoctoral Fellow',
+    email: '',
+    affiliations: [
+      'Postdoctoral Fellow',
+      'Department of Chemistry',
+      'City University of Hong Kong'
+    ],
+    biography: `Dr. Wu Yutong is a Postdoctoral Fellow in the Department of Chemistry at City University of Hong Kong.`,
+    education: [],
+    researchInterests: [
+      'Materials Science',
+      'Renewable Energy'
+    ],
+    imageUrl: '/images/team/yutong-wu.jpg'
   }
 }
 

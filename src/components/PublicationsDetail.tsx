@@ -26,6 +26,19 @@ const PublicationsDetail = () => {
   // 手动添加Nature系列期刊文章，按照时间排序（最新的在前）
   const selectedPublications = [
     {
+      title: "Improving the stability of monolithic perovskite/silicon tandems against reverse-bias stress using graded dielectric layers",
+      authors: ["Lina Wang", "Zexin Yu", "Ning Wang", "Chunlei Zhang", "Francesco Vanin", "Arya Shenvi Kakodkar", "Darshit Trevadia", "Danpeng Gao", "Nikhil Kalasariya", "Xiting Lang", "Leting Xing", "Chuanxiao Xiao", "Nicola Gasparini", "Shuang Xiao", "Martin Stolterfoht", "Zijia Li", "Ruy Sebastian Bonilla", "Zonglong Zhu"],
+      journal: "Nature Energy",
+      year: 2026,
+      pages: "1-10",
+      type: "article" as const,
+      tags: ["Solar cells", "Perovskite", "Tandem"],
+      doi: "10.1038/s41560-026-02067-w",
+      url: "https://www.nature.com/articles/s41560-026-02067-w",
+      booktitle: "",
+      publisher: ""
+    },
+    {
       title: "Closed-loop manufacturing for sustainable perovskite photovoltaics",
       authors: ["Bo Li", "Danpeng Gao", "Chunlei Zhang", "Zexin Yu", "Martin Stolterfoht", "Yen Hung Lin", "Markus Lenz", "Henry J. Snaith", "Zonglong Zhu"],
       journal: "Nature Reviews Materials",
