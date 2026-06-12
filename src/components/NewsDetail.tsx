@@ -8,6 +8,56 @@ const NewsDetail = () => {
 
   const allNews = [
     {
+      id: 7,
+      title: 'Improving the stability of perovskite/silicon tandems published in Nature Energy',
+      date: 'May 2026',
+      image: '/images/news/nature-energy-2026.jpg',
+      summary: 'We report graded dielectric layers that improve reverse-bias stability of monolithic perovskite/silicon tandems, achieving efficiencies over 34% and retaining over 92% of initial performance after 1,000 h.',
+      content: `Our latest work, led by Lina Wang and published in Nature Energy, addresses a critical stability challenge for perovskite/silicon tandem solar cells under partial shading. By introducing graded dielectric layers, we smooth the electric field profile at the perovskite/C60 interface, suppress abnormal carrier tunnelling, and inhibit halide ion accumulation under reverse bias. The resulting tandem devices deliver certified efficiencies of 33.76% and maintain more than 92% of their initial efficiency after 1,000 hours at −15 V. A large-area multicell module reaches 31.00% efficiency and retains over 90% after 1,000 hours of shading stress.`,
+      tags: ['Publication', 'Nature Energy', 'Tandem Solar Cells'],
+      sourceUrl: 'https://www.nature.com/articles/s41560-026-02067-w'
+    },
+    {
+      id: 9,
+      title: 'Our team won first and second prizes at the 12th Hong Kong University Student Innovation and Entrepreneurship Competition',
+      date: '30 May 2026',
+      image: '/images/news/innovation-competition-2026.jpg',
+      summary: 'Our team received first and second prizes at the 12th Hong Kong University Student Innovation & Entrepreneurship Competition for projects on autonomous closed-loop perovskite photovoltaics and self-powered flexible power supplies for wearable medical electronics.',
+      content: `We are delighted to announce that members of our research group won both first and second prizes at the 12th Hong Kong University Student Innovation and Entrepreneurship Competition, held on 30 May 2026.
+
+The first-prize project, "Artificial Intelligence-Driven and Automated Manufacturing Integrated Autonomous Closed-Loop Research and Development Framework Applied to High-Performance Perovskite Photovoltaics", translates our recent autonomous laboratory work into an integrated innovation platform.
+
+The second-prize project, "Self-Powered Flexible Power Supply Platform for Wearable Medical Electronic Devices", explores flexible energy solutions for next-generation healthcare electronics.
+
+These awards recognise the creativity, teamwork and translational potential of our group members, and we congratulate all involved.`,
+      tags: ['Award', 'Innovation', 'Student Achievement'],
+      sourceUrl: ''
+    },
+    {
+      id: 10,
+      title: '声明',
+      date: '12 May 2026',
+      image: '/images/news/statement-2026.svg',
+      summary: '关于近期通过邮件散布不实信息、涉嫌恶意造谣和诽谤事件的声明。',
+      content: `近期，有人多次通过邮件向我的朋友、同事及同行散布关于我本人及课题组的不实信息，涉嫌恶意造谣和诽谤。经核实，此事涉及其他课题组个别人员，相关导师已知悉情况，并会作出相应的批评和处理。具体情况也已向学校进行了汇报。
+
+对于相关造谣、诽谤行为，我们保留依法追究责任的权利，并将坚决维护本人及课题组的合法权益。
+
+感谢一直以来信任、理解和支持我的朋友、同事及同行，也感谢大家在此事中的理性判断与支持。`,
+      tags: ['Statement', 'Notice'],
+      sourceUrl: ''
+    },
+    {
+      id: 8,
+      title: 'Autonomous closed-loop framework for reproducible perovskite solar cells published in Nature',
+      date: '14 April 2026',
+      image: '/images/news/nature-2026.jpg',
+      summary: 'We developed a fully autonomous closed-loop framework that integrates active learning and Bayesian optimization, achieving over 27% efficiency and substantially improved reproducibility in perovskite solar cells.',
+      content: `Published in Nature, this work introduces an autonomous closed-loop framework that bridges materials discovery and device manufacturing for perovskite photovoltaics. The system combines active learning and quantum modelling to identify high-performance passivation molecules with Bayesian optimization and symbolic regression to refine fabrication parameters in real time. The autonomous pipeline discovered a novel molecule, 5ANI, and produced small-area cells with 27.22% efficiency (certified 27.18%) and mini-modules with 23.49% efficiency, while improving device reproducibility by about fivefold compared with manual fabrication.`,
+      tags: ['Publication', 'Nature', 'Automation'],
+      sourceUrl: 'https://doi.org/10.1038/s41586-026-10482-y'
+    },
+    {
       id: 1,
       title: 'Congratulations to Prof. Zhu Zonglong for being awarded the RGC Research Fellow Scheme (RFS) 2025/26',
       date: '25 July 2025',

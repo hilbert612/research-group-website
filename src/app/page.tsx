@@ -1,5 +1,4 @@
 import Header from '@/components/Header'
-import Notice from '@/components/Notice'
 import Hero from '@/components/Hero'
 import About from '@/components/About'
 import Research from '@/components/Research'
@@ -15,7 +14,6 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <Header />
-      <Notice />
       <Hero />
       <About />
       <Research />
